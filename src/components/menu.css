@@ -1,0 +1,22 @@
+.header-menu-main {
+  width: 100%;
+  height: var(--cc-size-5) !important;
+  padding: 0 var(--cc-size-2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu-logo {
+  font-size: var(--cc-text-lg);
+}
+.nav-menu-items {
+  display: flex;
+  gap: 16px
+}

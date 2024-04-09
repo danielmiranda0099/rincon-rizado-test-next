@@ -1,0 +1,80 @@
+.training-course {
+  padding: var(--cc-size-3x);
+  background: #c8e0fa;
+  background-image: linear-gradient(to bottom, rgba(188,220,252,0.2) 45%, rgb(255, 255, 255) 100%), url('/images/pattern-costras.png');
+  background-repeat: repeat;
+  background-size: 700px;
+  border-radius: var(--cc-radius-mdx2);
+}
+
+.training-course h2 {
+  font-size: var(--cc-text-lg);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: var(--cc-size-1);
+}
+
+.training-course p {
+  font-size: var(--cc-text-smx2);
+  width: 50%;
+  text-align: center;
+  font-size: 400;
+  margin: 0 auto;
+  margin-bottom: var(--cc-size-3);
+}
+
+.training-course-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50vh;
+}
+
+.training-course-image img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.training-course-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: var(--cc-size-3);
+}
+.training-course-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cc-size-px8);
+}
+.training-course-items span {
+  display: flex;
+  gap: var(--cc-size-px8);
+  font-size: var(--cc-text-smx2);
+}
+.training-course-items span svg {
+  width: var(--cc-size-1x3);
+  fill: rgb(53, 146, 233);
+}
+
+@media screen and (width <= 590px) {
+  .training-course-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .training-course p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: var(--cc-size-1x3);
+  }
+  .training-course-image img {
+    width: 70%;
+    height: auto;
+  }
+  .training-course-content {
+    gap: var(--cc-size-2x2);
+    padding-top: var(--cc-size-2);
+  }
+  .training-course-content button {
+    margin: 0 auto;
+  }
+}

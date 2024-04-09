@@ -1,0 +1,124 @@
+.container-section-card-services {
+  margin-bottom: var(--cc-size-2x3);
+}
+
+.header-card-services {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--cc-size-1);
+}
+.header-card-services h2 {
+  font-size: var(--cc-text-lg);
+  font-weight: 500;
+}
+
+.container-swiper-wrapper-card-services {
+  width: 100%;
+  height: 40vh;
+}
+
+.swiper-wrapper-card-services > :nth-child(even) {
+  transform: translateY(25px);
+  box-shadow: 12px -12px rgb(216, 154, 154);
+}
+/* .container-section-card-services > :nth-child(even) {
+  transform: translateY(32px);
+  /*TODO: Estandarizar lenguaje visual   */
+/* box-shadow: 12px -12px rgb(216, 154, 154);
+} */
+.container-swiper-wrapper-card-services .swiper-button-prev,
+.container-swiper-wrapper-card-services .swiper-button-next{
+  top: 0;
+  width: var(--cc-size-2x3);
+  height: 100%;
+  background: rgb(45,45,45);
+}
+.container-swiper-wrapper-card-services .swiper-button-prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(45,45,45,0.9) 0%, rgba(45,45,45,0.2) 100%);
+}
+.container-swiper-wrapper-card-services .swiper-button-next {
+  right: 0;
+  background: linear-gradient(90deg, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%);
+}
+.container-swiper-wrapper-card-services .swiper-button-prev::after,
+.container-swiper-wrapper-card-services .swiper-button-next::after {
+  color: white;
+}
+
+.container-card-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 6px;
+
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: var(--cc-size-1);
+
+  background-color: rgb(213, 190, 235);
+  /*TODO: Estandarizar lenguaje visual   */
+  /* box-shadow: 12px 12px rgb(216, 154, 154); */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
+
+  text-decoration: none;
+}
+.container-card-services::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: var(--cc-size-1);
+}
+.card-services-title {
+  color: white;
+  font-size: var(--cc-size-1x2);
+  font-weight: bold;
+  /*TODO: Estandarizar lenguaje visual   */
+  margin-bottom: 15px;
+}
+
+.swiper-pagination-card-services {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.swiper-pagination-card-services > span {
+  width: 15px;
+  height: 15px;
+}
+
+@media screen and (width <= 590px) {
+  .container-swiper-wrapper-card-services {
+    padding: 0;
+  }
+  .container-swiper-wrapper-card-services .swiper-button-prev {
+   display: none;
+  }
+  .container-swiper-wrapper-card-services .swiper-button-next {
+   display: none;
+  }
+
+}
+@media screen and (590px < width <= 990px) {
+  /* .container-section-card-services {
+
+  } */
+  .container-swiper-wrapper-card-services {
+    padding: 0;
+  }
+}
+@media screen and (990px < width <= 1500px) {
+}
+/* @media screen and (width > 1500px) {
+  .container-swiper-wrapper-card-services {
+  }
+} */

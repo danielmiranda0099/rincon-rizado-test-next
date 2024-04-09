@@ -1,0 +1,35 @@
+.service-list-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 0;
+  padding: 0 8px;
+  /* background-color: rgb(243, 189, 189);   */
+}
+.service-list {
+  display: inline-block;
+  text-align: center;
+  /* background-color: azure; */
+  width: 200px;
+}
+.service-list img{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  margin-bottom: 8px;
+  object-fit: cover;
+  object-position: 100% 0%;
+
+  box-shadow: 20px 8px rgb(242, 228, 104);
+}
+.service-list:nth-child(even) img {
+  box-shadow: 20px -8px rgb(242, 228, 104);
+}
+
+@media screen and (width <= 590px) {
+  .service-list {
+    font-size: 9px;
+    width: 90px;
+  }
+}
