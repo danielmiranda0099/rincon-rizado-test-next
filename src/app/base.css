@@ -234,14 +234,26 @@ BREAKPOINTS
     margin: var(--cc-size-4x) var(--cc-size-1x3);
   }
 }
+
 @media screen and (590px < width <= 990px) {
   :root {
-    font-size: 12px;
+    font-size: 10.5px;
   }
 }
-@media screen and (990px < width <= 1500px) {
+
+@media screen and (990px < width <= 1700px) {
+  :root {
+    font-size: 12.5px;
+  }
 }
-@media screen and (width > 1700px) {
+
+@media screen and ( 1700px < width <= 2200px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media screen and ( width > 2200px) {
   :root {
     font-size: 20px;
   }
