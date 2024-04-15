@@ -17,7 +17,7 @@ export function SectionFavoriteProducts() {
     <section className="section-contained-sm favorite-products-container">
       <div className="favorite-products-banner">
         <div className="favorite-products-banner-content">
-          <h2 className="text-mdx text-bold-smx">
+          <h2 className="text-lg text-bold-smx">
             Tenemos Todos Los Productos Para Ti
           </h2>
           <p className="text-smx2 text-bold-sm">
@@ -30,15 +30,23 @@ export function SectionFavoriteProducts() {
       </div>
 
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1.5}
         grid={{
-          rows: 2,
+          rows: 1,
         }}
         spaceBetween={15}
         pagination={{
           clickable: true,
         }}
         modules={[Grid, Pagination]}
+        breakpoints={{
+          990: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2
+            }
+          }
+        }}
         className="favorite-products-slider"
       >
         <SwiperSlide>
