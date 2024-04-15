@@ -78,11 +78,13 @@ export default function Home() {
     <>
       <BannerSlider />
 
-      <CardCarrouselSwiper headerCarrousel="SERVICIOS DE CORTE" data={SERVICES_CORTES} />
+      <CardCarrouselSwiper headerCarrousel="SERVICIOS PRINCIPALES" data={SERVICES_OTHERS} />
 
-      <CardCarrouselSwiper headerCarrousel="Rituales" data={SERVICES_RITUALS} />
+      <button className="btn btn-primary center-x">Ver Todos Los Servicios</button>
 
-      <CardCarrouselSwiper headerCarrousel="OTROS SERVICIOS" data={SERVICES_OTHERS} />
+      <SectionFavoriteProducts />
+
+      <SectionCategoriesGrid />
 
       <SectionTest />
       
@@ -90,9 +92,7 @@ export default function Home() {
 
       <SectionTraining />
 
-      <SectionFavoriteProducts />
 
-      <SectionCategoriesGrid />
 
       <SectionReels />
 
