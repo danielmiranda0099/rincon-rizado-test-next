@@ -4,35 +4,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 import './section-image-diff.css';
 import { ImageDiff } from '..';
 
 export function SectionImageDiff() {
   return (
-    <div className='section-contained-lg image-diff-container'>
+    <div className='section-contained-sm image-diff-container'>
+      <div className='image-diff-header'>
       <h2>Mira Nuestro Resultados, Nuestros Procesos Son Los Mejores</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eos incidunt velit tenetur doloribus eaque.</p>
-      <Swiper
-        effect={'coverflow'}
+      </div>
+     <div>
+     <Swiper
         grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          scale: 0.7,
-        }}
+        slidesPerView={1}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        initialSlide={1}
+        modules={[Pagination]}
         className="swiper-image-diff"
       >
         <SwiperSlide className='swiper-item'>
@@ -45,6 +38,7 @@ export function SectionImageDiff() {
         <ImageDiff images={['https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg', 'https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg']} />
         </SwiperSlide>
       </Swiper>
+     </div>
     </div>
   );
 }

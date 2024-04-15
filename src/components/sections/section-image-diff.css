@@ -1,11 +1,22 @@
-.image-diff-container h2{
+.image-diff-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.image-diff-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--cc-size-1x);
+}
+.image-diff-header h2{
   font-size: var(--cc-text-lg);
   font-weight: 400;
   margin: 0 auto;
   text-align: center;
 }
 
-.image-diff-container p {
+.image-diff-header p {
   font-size: var(--cc-text-smx2);
   width: 70%;
   text-align: center;
@@ -14,9 +25,10 @@
 
 
 .swiper-image-diff{
-  width: 100%;
+  width: 400px;
   padding-top: 50px;
   padding-bottom: 50px;
+  /* background-color: red; */
 }
 
 .swiper-item {
