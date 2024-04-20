@@ -1,12 +1,43 @@
 import { BannerSlider, CardCarrouselSwiper } from "@/components";
 import { SectionFavoriteProducts, SectionImageDiff, SectionReels, SectionTest, SectionTraining } from "@/components/sections";
 import { SectionCategoriesGrid } from "@/components/sections/SectionCategoriesGrid";
-
-const SERVICES_CORTES = [
+// Color Base con Aclaración
+// Color Base Sin Aclaración (cobertura oscura)
+// Prueba de coloración
+// REFLEJOS Y CONTRASTES:
+//   ILUMINACIONES: HIGHLIGHT - BALAYAGE
+//   BABYLIGHTS.
+const SERVICES_MAIN = [
+  
+  {
+    title: "Color Base con Aclaración",
+    path: "#",
+    image: "/images/image11.jpg",
+  },
   {
     title: "CORTE DE FORMA",
     path: "#",
+    image: "/images/image9.jpg",
+  },
+  {
+    title: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",
+    path: "#",
+    image: "/images/image13.jpg",
+  },
+  {
+    title: "Prueba de coloración",
+    path: "#",
     image: "https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg",
+  },
+  {
+    title: "Color Base Sin Aclaración (cobertura oscura)",
+    path: "#",
+    image: "/images/image19.jpg",
+  },
+  {
+    title: "BABYLIGHTS",
+    path: "#",
+    image: "/images/image20.jpg",
   },
   {
     title: "CORTE DE PUNTAS",
@@ -78,7 +109,7 @@ export default function Home() {
     <>
       <BannerSlider />
 
-      <CardCarrouselSwiper headerCarrousel="SERVICIOS PRINCIPALES" data={SERVICES_OTHERS} />
+      <CardCarrouselSwiper headerCarrousel="SERVICIOS PRINCIPALES" data={SERVICES_MAIN} />
 
       <button className="btn btn-primary center-x">Ver Todos Los Servicios</button>
 
