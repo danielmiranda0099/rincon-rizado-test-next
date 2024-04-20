@@ -72,17 +72,18 @@ main {
   width: 100%;
   min-height: 50dvh;
 }
-.section-contained-full {
-  width: 100%;
-}
+
 .section-contained-sm {
   margin: var(--cc-size-4x) var(--cc-size-15);
 }
 .section-contained-md {
-  margin: var(--cc-size-4x) var(--cc-size-7x);
+  margin: var(--cc-size-4x) var(--cc-size-7);
 }
 .section-contained-lg {
   margin: var(--cc-size-4x) var(--cc-size-1x3);
+}
+.section-contained-full {
+  width: 100%;
 }
 
 .text-sm {
