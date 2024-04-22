@@ -15,35 +15,26 @@
 .container-swiper-wrapper-card-services {
   width: 100%;
   height: 40vh;
+  overflow: visible;
 }
 
-.swiper-wrapper-card-services > :nth-child(even) {
-  transform: translateY(25px);
-  box-shadow: 12px -12px rgb(216, 154, 154);
-}
-/* .container-section-card-services > :nth-child(even) {
-  transform: translateY(32px);
-  /*TODO: Estandarizar lenguaje visual   */
-/* box-shadow: 12px -12px rgb(216, 154, 154);
-} */
 .container-swiper-wrapper-card-services .swiper-button-prev,
 .container-swiper-wrapper-card-services .swiper-button-next{
-  top: 0;
-  width: var(--cc-size-2x3);
-  height: 100%;
-  background: rgb(45,45,45);
-}
-.container-swiper-wrapper-card-services .swiper-button-prev {
-  left: 0;
-  background: linear-gradient(90deg, rgba(45,45,45,0.9) 0%, rgba(45,45,45,0.2) 100%);
-}
-.container-swiper-wrapper-card-services .swiper-button-next {
-  right: 0;
-  background: linear-gradient(90deg, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 100%;
+  width: var(--cc-size-4x);
+  height: var(--cc-size-4x);
+  top: calc(55% - calc(var(--cc-size-4x) / 2));
 }
 .container-swiper-wrapper-card-services .swiper-button-prev::after,
 .container-swiper-wrapper-card-services .swiper-button-next::after {
-  color: white;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: var(--cc-text-lg);
+  font-weight: bold;
+}
+.container-swiper-wrapper-card-services .swiper-button-prev.swiper-button-disabled,
+.container-swiper-wrapper-card-services .swiper-button-next.swiper-button-disabled{
+  pointer-events: auto;
 }
 
 .container-card-services {
@@ -59,7 +50,7 @@
 
   background-color: rgb(213, 190, 235);
   /*TODO: Estandarizar lenguaje visual   */
-  /* box-shadow: 12px 12px rgb(216, 154, 154); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,13 +91,6 @@
   .container-swiper-wrapper-card-services {
     padding: 0;
   }
-  .container-swiper-wrapper-card-services .swiper-button-prev {
-   display: none;
-  }
-  .container-swiper-wrapper-card-services .swiper-button-next {
-   display: none;
-  }
-
 }
 @media screen and (590px < width <= 990px) {
   /* .container-section-card-services {
