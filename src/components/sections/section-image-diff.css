@@ -1,6 +1,7 @@
 .image-diff-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-top: var(--cc-size-7);
 }
 
 .image-diff-header {
@@ -15,7 +16,6 @@
   margin: 0 auto;
   text-align: center;
 }
-
 .image-diff-header p {
   font-size: var(--cc-text-smx2);
   width: 70%;
@@ -30,12 +30,12 @@
   padding-bottom: 50px;
   /* background-color: red; */
 }
-
 .swiper-item {
   background-position: center;
   background-size: cover;
   width: 400px;
-  height: 400px;
+  height: fit-content;
+  /* background-color: yellow; */
 }
 
 .swiper-item img {
@@ -43,7 +43,14 @@
   width: 100%;
 }
 
-.swiper-3d .swiper-slide-shadow-right,
-.swiper-3d .swiper-slide-shadow-left {
-  background: none;
+
+@media screen and (width <= 590px) {
+  .image-diff-container {
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (590px < width <= 990px) {
+
 }

@@ -2,7 +2,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
-import { Grid, Pagination } from "swiper/modules";
+import { Grid, Pagination, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -30,6 +30,7 @@ export function SectionFavoriteProducts() {
       </div>
 
       <Swiper
+        navigation={true}
         slidesPerView={1.5}
         grid={{
           rows: 1,
@@ -38,7 +39,7 @@ export function SectionFavoriteProducts() {
         pagination={{
           clickable: true,
         }}
-        modules={[Grid, Pagination]}
+        modules={[Pagination, Navigation, Grid, ]}
         breakpoints={{
           990: {
             slidesPerView: 2,

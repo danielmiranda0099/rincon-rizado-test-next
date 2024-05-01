@@ -60,6 +60,10 @@
   gap: var(--cc-size-2);
   justify-content: center;
   overflow: hidden;
+
+  max-width: calc(1rem * 45);
+  margin-left: auto;
+  margin-right: auto;
 }
 .service-result-images img {
   aspect-ratio: 1/1.5;
@@ -71,9 +75,10 @@
 
 /* ***************************** */
 .service-content-offers {
-  width: 35%;
   display: flex;
   flex-direction: column;
+
+  max-width: calc(1rem * 45);
   margin: 0 auto;
   padding: 0 var(--cc-size-2);
   padding-top: var(--cc-size-2);
@@ -92,7 +97,7 @@
   display: flex;
   align-items: start;
   gap: var(--cc-size-3);
-  padding: var(--cc-size-2) 0;
+  padding: var(--cc-size-1x) 0;
   border-bottom: 2px solid rgb(255, 255, 255);
 }
 .service-content-offers-item:last-child {
@@ -120,7 +125,7 @@
   object-fit: cover;
 }
 
-/* ******************************* */
+/* ******** responsive breakpoints ************** */
 @media screen and (width <= 590px) {
   .section-contained-md.service-banner {
     margin: var(--cc-size-4x) var(--cc-size-1x3);

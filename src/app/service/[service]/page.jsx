@@ -42,7 +42,7 @@ export default async function ServisePage({params }) {
         </div>
       </div>
 
-      <div className="section-contained-lg service-result-images">
+      <div className="section-contained-sm service-result-images">
         <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
         <img src="https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg" />
         <img src="/images/image-banner-products-favorite.jpg" />
@@ -50,7 +50,7 @@ export default async function ServisePage({params }) {
       </div>
 
       <div className="section-contained-sm service-content-offers">
-        <h2 className="text-lg text-center">El Servicio Incluye:</h2>
+        <h2 className="text-lg text-center margin-bottom-mdx">El Servicio Incluye:</h2>
         {data.service_includes.map((item) => (
           <div className="service-content-offers-item">
             <IconCheck /> <span>{item}</span>

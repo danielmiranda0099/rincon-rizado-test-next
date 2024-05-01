@@ -1,17 +1,15 @@
 'use client'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+
+import { ImageDiff } from '..';
 
 import './section-image-diff.css';
-import { ImageDiff } from '..';
 
 export function SectionImageDiff() {
   return (
@@ -22,10 +20,10 @@ export function SectionImageDiff() {
       </div>
      <div>
      <Swiper
-        grabCursor={true}
+        navigation={true}
         slidesPerView={1}
         pagination={true}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="swiper-image-diff"
       >
         <SwiperSlide className='swiper-item'>

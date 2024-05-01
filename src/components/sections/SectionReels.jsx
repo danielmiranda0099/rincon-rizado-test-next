@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 import "./section-reels.css";
 import { IconInstagram } from "../icons";
@@ -30,13 +30,11 @@ export function SectionReels() {
         <button className="btn  margin-bottom-lgx2 center-x"><IconInstagram /> Sigueme en Instagram</button>
       </div>
       <Swiper
-        centeredSlides={true}
+        navigation={true}
+        pagination={true}
         slidesPerView={1.6}
         spaceBetween={30}
-        pagination={{
-          clickable: false,
-        }}
-        modules={[]}
+        modules={[Navigation, Pagination]}
         breakpoints={{
           1500: {
             slidesPerView: 4,
@@ -47,11 +45,10 @@ export function SectionReels() {
             spaceBetween: 35,
           },
           590: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 35,
           },
         }}
-        initialSlide={1}
         className="my-swiper"
       >
         <SwiperSlide
