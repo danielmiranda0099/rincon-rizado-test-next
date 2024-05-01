@@ -15,7 +15,7 @@ export function Menu() {
   return (
     <header className="header-menu-main">
       <nav className="nav-menu-main">
-        <span className="nav-menu-logo">Rincon Rizado</span>
+        <Link href="/" className="nav-menu-logo">Rincon Rizado</Link>
 
         <div className="nav-menu-items">
           {PAGES.map((item) => (

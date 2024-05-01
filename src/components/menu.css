@@ -14,9 +14,18 @@
   align-items: center;
 }
 .nav-menu-logo {
+  text-decoration: none;
   font-size: var(--cc-text-lg);
+  color: rgb(234, 179, 179);
+  font-weight: bold;
 }
 .nav-menu-items {
   display: flex;
   gap: 16px
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  color: rgb(234, 179, 179);
+  font-weight: bold;
 }
