@@ -6,42 +6,42 @@ const SERVICES_MAIN = [
   
   {
     title: "Color Base con Aclaración",
-    path: "/service/color-base-con-aclaracion",
+    path: "/services/color-base-con-aclaracion",
     image: "/images/image11.jpg",
   },
   {
     title: "CORTE DE FORMA",
-    path: "/service/corte-de-forma",
+    path: "/services/corte-de-forma",
     image: "/images/image9.jpg",
   },
   {
     title: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",
-    path: "/service/iluminaciones-highlight-balayage",
+    path: "/services/iluminaciones-highlight-balayage",
     image: "/images/image13.jpg",
   },
   {
     title: "Prueba de coloración",
-    path: "/service/slug",
+    path: "/services/slug",
     image: "https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg",
   },
   {
     title: "Color Base Sin Aclaración (cobertura oscura)",
-    path: "/service/color-base-sin-aclaracion",
+    path: "/services/color-base-sin-aclaracion",
     image: "/images/image19.jpg",
   },
   {
     title: "BABYLIGHTS",
-    path: "/service/babylights",
+    path: "/services/babylights",
     image: "/images/image20.jpg",
   },
   {
     title: "CORTE DE PUNTAS",
-    path: "/service/corte-de-puntas",
+    path: "/services/corte-de-puntas",
     image: "https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg",
   },
   {
     title: "CORTE DE FORMA BABY",
-    path: "/service/corte-de-forma-baby",
+    path: "/services/corte-de-forma-baby",
     image: "https://images.pexels.com/photos/17547816/pexels-photo-17547816/free-photo-of-mujer-en-pie-de-pie-retrato.jpeg",
   },
 ]

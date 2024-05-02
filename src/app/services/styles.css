@@ -1,0 +1,69 @@
+.services-filter-container {
+  width: 100%;
+  height: 90px;
+  background-color: azure;
+  border: 2px solid var(--cc-color-gray);
+  margin-bottom: var(--cc-size-2);
+}
+
+.all-services-container h1 {
+  font-size: var(--cc-text-lg);
+  margin-bottom: var(--cc-size-2);
+}
+
+.services-by-type-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--cc-size-1);
+}
+.service-by-type-item {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: var(--cc-size-1);
+  background-color: rgba(204, 215, 226, 0.719);
+
+  border-top-right-radius: var(--cc-radius-mdx);
+  border-bottom-right-radius: var(--cc-radius-mdx);
+}
+.service-by-type-item .service-item-image {
+  background-color: red;
+}
+.service-by-type-item .service-item-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.service-by-type-item .service-item-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cc-size-1);
+  padding: var(--cc-size-1) 0;
+  padding-right: var(--cc-size-1);
+}
+.service-by-type-item .service-item-header h2 {
+  font-size: var(--cc-text-md);
+}
+.service-by-type-item .service-item-header p {
+  font-size: var(--cc-text-smx);
+  margin-bottom: var(--cc-size-px6);
+}
+
+.service-by-type-item .service-item-header-buttons {
+  padding-bottom: var(--cc-size-1);
+}
+.service-by-type-item .service-item-header-buttons a {
+  font-size: var(--cc-text-smx);
+  padding: var(--cc-size-px6);
+  cursor: pointer;
+}
+
+@media screen and ( width <= 890px) {
+  .services-by-type-container {
+    grid-template-columns: repeat(1, 1fr);
+  }  
+}
+
+@media screen and (990px < width <= 1700px) {
+  .services-by-type-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}  
