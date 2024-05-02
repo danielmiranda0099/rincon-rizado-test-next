@@ -1,0 +1,41 @@
+.contact-info-container {
+  display: flex;
+  gap: 30%;
+}
+.contact-info-container-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cc-size-2);
+}
+.contact-info-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cc-size-px7);
+  justify-content: center;
+}
+.contact-info-items-container > h3 {
+  font-size: var(--cc-text-mdx);
+  font-weight: 500;
+}
+.contact-info-items-container > .contact-info-item {
+  display: flex;
+  gap: var(--cc-size-px7);
+  align-items: center;
+  margin-left: var(--cc-size-1x);
+}
+.contact-info-items-container > .contact-info-item > p {
+  font-size: var(--cc-text-smx);
+}
+
+@media screen and (width <= 590px) {
+  .contact-info-container {
+    flex-direction: column;
+    gap: var(--cc-size-1);
+  }
+}
+
+@media screen and (590px < width <= 990px) {
+  .contact-section-container {
+    margin: var(--cc-size-4x) var(--cc-size-1x3);
+  }
+}
