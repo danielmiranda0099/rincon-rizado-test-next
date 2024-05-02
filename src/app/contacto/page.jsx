@@ -9,20 +9,20 @@ export default function page() {
           <div className="contact-info-items-container">
             <h3>Horario</h3>
             <div className="contact-info-item">
-              <IconClock /> <p>Lunes a Viernes de 9:00 a.m a 6:00 p.m </p>
+              <IconClock size="1.7rem" /> <p>Lunes a Viernes de 9:00 a.m a 6:00 p.m </p>
             </div>
             <div className="contact-info-item">
-              <IconClock /> <p>Sabado de 9:00 a.m a 3:00 p.m</p>
+              <IconClock size="1.7rem" /> <p>Sabado de 9:00 a.m a 3:00 p.m</p>
             </div>
           </div>
 
           <div className="contact-info-items-container">
             <h3>Contacto</h3>
             <div className="contact-info-item">
-              <IconPhone /> <p>+57 3008891708</p>
+              <IconPhone size="1.7rem" /> <p>+57 3008891708</p>
             </div>
             <div className="contact-info-item">
-              <IconPhone /> <p>+57 3008891708</p>
+              <IconPhone size="1.7rem" /> <p>+57 3008891708</p>
             </div>
           </div>
         </div>
@@ -31,22 +31,22 @@ export default function page() {
           <div className="contact-info-items-container">
             <h3>Redes Sociales</h3>
             <div className="contact-info-item">
-              <IconFacebook />
+              <IconFacebook size="1.7rem" />
               <p>@RinconRizado</p>
             </div>
             <div className="contact-info-item">
-              <IconFacebook />
+              <IconFacebook size="1.7rem" />
               <p>@RinconRizado</p>
             </div>
             <div className="contact-info-item">
-              <IconFacebook />
+              <IconFacebook size="1.7rem" />
               <p>@RinconRizado</p>
             </div>
           </div>
           <div className="contact-info-items-container">
             <h3>Dirección</h3>
             <div className="contact-info-item">
-              <IconMap />
+              <IconMap size="1.7rem" />
               <p>Centro Comercial Las Palmas</p>
             </div>
           </div>
