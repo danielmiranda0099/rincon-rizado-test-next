@@ -1,0 +1,95 @@
+.our-history-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--cc-size-4x);
+}
+.our-history-content-container > h2 {
+  font-size: var(--cc-text-lgx);
+  margin-bottom: var(--cc-size-1x2);
+}
+.our-history-content-container p {
+  font-size: var(--cc-text-smx2);
+  margin-bottom: var(--cc-size-1x);
+}
+.our-history-content-container p:last-of-type {
+  margin-bottom: var(--cc-size-4);
+}
+.our-history-content-gallery-item {
+  display: flex;
+  justify-content: center;
+  gap: var(--cc-size-2);
+}
+.our-history-content-gallery-item img {
+  width: var(--cc-size-16);
+  height: calc( var(--cc-size-16) * 1.4);
+  object-fit: cover;
+  border-radius: var(--cc-radius-mdx);
+}
+.our-history-content-gallery-item img:nth-child(1) {
+  transform: rotate(-25deg)
+}
+.our-history-content-gallery-item img:nth-child(2) {
+  transform: rotate(20deg)
+}
+
+.our-history-line-time-container {
+  position: relative;
+}
+.our-history-line-time-item {
+  display: flex;
+  gap: var(--cc-size-1x2);
+  margin-bottom: var(--cc-size-3);
+}
+.our-history-line-time-container > div:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.our-history-line-time-item .line-time-year {
+  font-size: var(--cc-text-mdx2);
+  background-color: var(--cc-color-gray);
+  padding: var(--cc-size-px5);
+  border-radius: var(--cc-radius-mdx);
+  height: fit-content;
+}
+.our-history-line-time-content h2 {
+  font-size: var(--cc-text-mdx2);
+  margin-bottom: var(--cc-size-px7);
+}
+.our-history-line-time-content p {
+  font-size: var(--cc-text-smx2);
+  margin-bottom: var(--cc-size-px7);
+}
+.our-history-line-time-content .our-history-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--cc-size-px7);
+  height: var(--cc-size-9);
+  overflow: hidden;
+}
+.our-history-line-time-content .our-history-gallery img {
+  object-fit: cover;
+  height: var(--cc-size-9);
+  width: 100%;
+  border-radius: var(--cc-radius-mdx);
+}
+
+
+.our-history-line-time-container .line-time {
+  position: absolute;
+  top: 0;
+  left: calc(4px + var(--cc-text-mdx2) + (var(--cc-radius-mdx) / 2));
+  width: 2px;
+  height: 100%;
+  background-color: var(--cc-color-gray);
+  z-index: -1;
+}
+
+@media screen and ( width <= 890px) {
+  .our-history-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-history-line-time-content .our-history-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

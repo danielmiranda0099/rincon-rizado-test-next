@@ -64,6 +64,8 @@
   --cc-radius-lg: 22px;
   --cc-radius-lgx: 26px;
   --cc-radius-lgx2: 32px;
+
+  --cc-color-gray: #8291a7;
 }
 .wa-splmn-share-btn-offset {
   display: none;

@@ -14,6 +14,10 @@ const PAGES = [
     page: "Contacto",
     path: "/contacto",
   },
+  {
+    page: "Nosotros",
+    path: "/nosotros",
+  },
 ];
 
 export function Menu() {
