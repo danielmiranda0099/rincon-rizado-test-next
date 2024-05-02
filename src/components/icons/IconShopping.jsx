@@ -1,4 +1,4 @@
-export function IconClock({ size = "1rem", color="#2c3e50", className = "" }) {
+export function IconShopping({ size = "1rem", color="#2c3e50", className = "" }) {
   return (
     <svg
       width={size}
@@ -12,9 +12,10 @@ export function IconClock({ size = "1rem", color="#2c3e50", className = "" }) {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-      <path d="M12 7v5" />
-      <path d="M12 12l2 -3" />
+      <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+      <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+      <path d="M17 17h-11v-14h-2" />
+      <path d="M6 5l14 1l-1 7h-13" />
     </svg>
   );
 }

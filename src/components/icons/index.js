@@ -4,3 +4,6 @@ export * from './IconFacebook';
 export * from './IconClock';
 export * from './IconPhone';
 export * from './IconMap';
+export * from './IconShopping';
+export * from './IconMenu';
+export * from './IconClose';

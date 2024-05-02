@@ -1,8 +1,15 @@
-export function IconInstagram() {
+export function IconInstagram({ size = "1rem", color="#2c3e50", className = "" }) {
   return (
     <svg
+      width={size}
+      height={size}
+      className={className}
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+      stroke-width="1.5"
+      stroke={color}
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <path
         fill-rule="evenodd"

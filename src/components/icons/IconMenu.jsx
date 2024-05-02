@@ -1,4 +1,4 @@
-export function IconClock({ size = "1rem", color="#2c3e50", className = "" }) {
+export function IconMenu({ size = "1rem", color="#2c3e50", className = "" }) {
   return (
     <svg
       width={size}
@@ -12,9 +12,9 @@ export function IconClock({ size = "1rem", color="#2c3e50", className = "" }) {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-      <path d="M12 7v5" />
-      <path d="M12 12l2 -3" />
+      <path d="M4 6h16" />
+      <path d="M7 12h13" />
+      <path d="M10 18h10" />
     </svg>
   );
 }
