@@ -43,6 +43,13 @@
   --cc-size-18:   calc(1rem * 18); /*288px 216px 144px*/
   --cc-size-20:   calc(1rem * 20); /*320px 240px 160px*/
   --cc-size-24:   calc(1rem * 24); /*384px 288px 192px*/
+  --cc-size-26:   calc(1rem * 26); /*384px 288px 192px*/
+  --cc-size-28:   calc(1rem * 28); /*384px 288px 192px*/
+  --cc-size-30:   calc(1rem * 30); /*384px 288px 192px*/
+  --cc-size-34:   calc(1rem * 34); /*384px 288px 192px*/
+  --cc-size-40:   calc(1rem * 40); /*384px 288px 192px*/
+  --cc-size-44:   calc(1rem * 44); /*384px 288px 192px*/
+  --cc-size-50:   calc(1rem * 50); /*384px 288px 192px*/
 
   --cc-text-sm: var(--cc-size-px8);
   --cc-text-smx: var(--cc-size-1);
@@ -66,9 +73,6 @@
   --cc-radius-lgx2: 32px;
 
   --cc-color-gray: #8291a7;
-}
-.wa-splmn-share-btn-offset {
-  display: none;
 }
 main {
   width: 100%;
@@ -310,6 +314,12 @@ main {
   /* TODO: create Var Color */
   background-color: rgb(53, 146, 233);
   color: white;
+}
+.btn-outline {
+  /* TODO: create Var Color */
+  background-color: inherit;
+  color: #3c435a;
+  border: 2px solid #3c435a;
 }
 
 /********** NAVIGATION SLIDER ********************/
