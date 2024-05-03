@@ -7,3 +7,4 @@ export * from './IconMap';
 export * from './IconShopping';
 export * from './IconMenu';
 export * from './IconClose';
+export * from './IconWhatsApp';

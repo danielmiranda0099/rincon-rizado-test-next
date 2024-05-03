@@ -1,9 +1,19 @@
 .services-filter-container {
-  width: 100%;
-  height: 90px;
-  background-color: azure;
-  border: 2px solid var(--cc-color-gray);
+  display: flex;
+  flex-direction: column;
   margin-bottom: var(--cc-size-2);
+  gap: var(--cc-size-1);
+}
+.services-filter-container label {
+  font-size: var(--cc-text-md);
+}
+.services-filter-container select {
+  font-size: var(--cc-text-md);
+  height: var(--cc-size-4x);
+}
+.services-filter-container select::before {
+  display: block;
+  content: 'hola';
 }
 
 .all-services-container h1 {
@@ -13,57 +23,53 @@
 
 .services-by-type-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--cc-size-1);
+  /* grid-template-columns: repeat(auto-fit, minmax(var(--cc-size-16), 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(var(--cc-size-20), 1fr));
+  gap: var(--cc-size-1x2);
 }
-.service-by-type-item {
-  display: grid;
-  grid-template-columns: 1fr 1.7fr;
-  gap: var(--cc-size-1);
-  background-color: rgba(204, 215, 226, 0.719);
-
-  border-top-right-radius: var(--cc-radius-mdx);
-  border-bottom-right-radius: var(--cc-radius-mdx);
+ .service-by-type-item {
+  
 }
+/*
 .service-by-type-item .service-item-image {
-  background-color: red;
-}
+
+} */
 .service-by-type-item .service-item-image img {
-  height: 100%;
+  aspect-ratio: 1/1.2;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  object-position: center;
 }
 .service-by-type-item .service-item-header {
   display: flex;
   flex-direction: column;
-  gap: var(--cc-size-1);
-  padding: var(--cc-size-1) 0;
-  padding-right: var(--cc-size-1);
+  gap: var(--cc-size-px3);
 }
 .service-by-type-item .service-item-header h2 {
+  height: calc(3 * 1.2em);
   font-size: var(--cc-text-md);
+  font-weight: 500;
+  text-transform: lowercase;
+  overflow: hidden;
 }
-.service-by-type-item .service-item-header p {
-  font-size: var(--cc-text-smx);
-  margin-bottom: var(--cc-size-px6);
-}
-
 .service-by-type-item .service-item-header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cc-size-1);
   padding-bottom: var(--cc-size-1);
 }
 .service-by-type-item .service-item-header-buttons a {
+  text-align: center;
+  width: 100%;
   font-size: var(--cc-text-smx);
   padding: var(--cc-size-px6);
   cursor: pointer;
 }
 
-@media screen and ( width <= 890px) {
-  .services-by-type-container {
-    grid-template-columns: repeat(1, 1fr);
-  }  
+.service-by-type-item .service-item-header-buttons .service-item-header-button-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cc-size-1);
 }
-
-@media screen and (990px < width <= 1700px) {
-  .services-by-type-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}  
