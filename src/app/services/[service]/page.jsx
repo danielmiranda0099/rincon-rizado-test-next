@@ -52,7 +52,7 @@ export default async function ServisePage({params }) {
       <div className="section-contained-sm service-content-offers">
         <h2 className="text-lg text-center margin-bottom-mdx">El Servicio Incluye:</h2>
         {data.service_includes.map((item) => (
-          <div className="service-content-offers-item">
+          <div className="service-content-offers-item" key={item}>
             <IconCheck /> <span>{item}</span>
           </div>
         ))}
