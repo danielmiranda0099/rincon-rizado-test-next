@@ -15,6 +15,7 @@ export function BannerSlider() {
   return (
     <Swiper
       effect={"fade"}
+      navigation={true}
       loop={true}
       autoplay={{
         delay: 5000,
@@ -23,7 +24,7 @@ export function BannerSlider() {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination, Autoplay]}
+      modules={[Navigation, Pagination, Autoplay]}
       className="mySwiper"
     >
       <SwiperSlide>

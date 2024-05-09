@@ -1,6 +1,7 @@
 import { BannerSlider, CardCarrouselSwiper } from "@/components";
 import { SectionFavoriteProducts, SectionImageDiff, SectionReels, SectionTest, SectionTraining } from "@/components/sections";
 import { SectionCategoriesGrid } from "@/components/sections/SectionCategoriesGrid";
+import Link from "next/link";
 
 const SERVICES_MAIN = [
   
@@ -53,7 +54,7 @@ export default function Home() {
 
       <CardCarrouselSwiper headerCarrousel="SERVICIOS PRINCIPALES" data={SERVICES_MAIN} />
 
-      <button className="btn btn-primary center-x">Ver Todos Los Servicios</button>
+      <Link className="btn btn-primary center-x" href="/services">Ver Todos Los Servicios</Link>
 
       <SectionFavoriteProducts />
 

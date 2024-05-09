@@ -15,7 +15,7 @@ export function SectionImageDiff() {
   return (
     <div className='section-contained-sm image-diff-container'>
       <div className='image-diff-header'>
-      <h2>Mira Nuestro Resultados, Nuestros Procesos Son Los Mejores</h2>
+      <h2>Mira <span className="text-highlight text-bg-purple">Nuestro Resultados</span>, Nuestros Procesos Son Los Mejores</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eos incidunt velit tenetur doloribus eaque.</p>
       </div>
      <div>

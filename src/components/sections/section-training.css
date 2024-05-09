@@ -44,18 +44,14 @@
 .training-course-items {
   display: flex;
   flex-direction: column;
-  gap: var(--cc-size-px8);
+  gap: var(--cc-size-1);
 }
 .training-course-items span {
   display: flex;
-  gap: var(--cc-size-px8);
+  align-items: center;
+  gap: var(--cc-size-1);
   font-size: var(--cc-text-smx2);
 }
-.training-course-items span svg {
-  width: var(--cc-size-1x3);
-  fill: rgb(53, 146, 233);
-}
-
 @media screen and (width <= 590px) {
   .training-course-body {
     display: flex;

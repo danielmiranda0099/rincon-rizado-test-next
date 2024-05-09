@@ -16,11 +16,11 @@ export function SectionTraining() {
         </div>
         <div className="training-course-content">
          <div className="training-course-items">
-          <span><IconCheck /> Asesoramiento 24/7</span>
-          <span><IconCheck /> Horario Flexible</span>
-          <span><IconCheck /> 100 Horas De Aprendizaje</span>
-          <span><IconCheck /> Teoaria y practica</span>
-          <span><IconCheck /> Practicas Reales en el salon</span>
+          <span><IconCheck size="2.5rem" color="#3592e9" /> Asesoramiento 24/7</span>
+          <span><IconCheck size="2.5rem" color="#3592e9" /> Horario Flexible</span>
+          <span><IconCheck size="2.5rem" color="#3592e9" /> 100 Horas De Aprendizaje</span>
+          <span><IconCheck size="2.5rem" color="#3592e9" /> Teoaria y practica</span>
+          <span><IconCheck size="2.5rem" color="#3592e9" /> Practicas Reales en el salon</span>
          </div>
 
           <button className="btn btn-primary">Contactate Para Saber Mas</button>

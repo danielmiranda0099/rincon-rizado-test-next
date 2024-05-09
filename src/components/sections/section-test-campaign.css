@@ -1,5 +1,5 @@
 .test-campaign {
-  height: 70vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -42,13 +42,13 @@
   top: 0;
   left: var(--cc-size-px2);
   transform: rotate(-10deg);
-  background-color: rgb(156, 156, 230);
+  background-color: #bd99ee;
 }
 .test-campaign-card.campaign-card-right {
   top: 0;
   right: var(--cc-size-px2);
   transform: rotate(10deg);
-  background-color: rgb(212, 165, 165);
+  background-color: #e25f9a;
 }
 
 @media screen and (width <= 590px) {

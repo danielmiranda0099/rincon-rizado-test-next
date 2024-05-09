@@ -21,7 +21,7 @@ const BREAD = {
 const ALL_SERVICES = [
   {
     image: "./images/image5.jpg",
-    service_name: "color base con aclaracion con nombre muy lago y ya esto no se ve",
+    service_name: "color base con aclaracion",
     type_service: TYPE_SERVICES.color,
     path: "#"
   },

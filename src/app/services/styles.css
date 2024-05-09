@@ -40,6 +40,7 @@
   height: auto;
   object-fit: cover;
   object-position: center;
+  border-radius: var(--cc-radius-mdx);
 }
 .service-by-type-item .service-item-header {
   display: flex;
@@ -47,7 +48,7 @@
   gap: var(--cc-size-px3);
 }
 .service-by-type-item .service-item-header h2 {
-  height: calc(3 * 1.2em);
+  height: calc(2 * 1.2em);
   font-size: var(--cc-text-md);
   font-weight: 500;
   text-transform: lowercase;

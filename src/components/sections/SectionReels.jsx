@@ -27,7 +27,7 @@ export function SectionReels() {
           amet consectetur adipisicing elit. Officia?
         </p>
 
-        <button className="btn  margin-bottom-lgx2 center-x"><IconInstagram /> Sigueme en Instagram</button>
+        <button className="btn margin-bottom-lgx2 center-x text-md"> Sigueme en Instagram <IconInstagram size="2.5rem" color="#fff" /></button>
       </div>
       <Swiper
         navigation={true}
