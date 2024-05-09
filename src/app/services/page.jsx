@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { IconWhatsApp } from "@/components/icons";
 import "./styles.css";
 import { useEffect, useState } from "react";
@@ -7,97 +7,98 @@ const TYPE_SERVICES = {
   color: "color",
   corte: "corte",
   ritual: "ritual",
-  definicion: "definicion"
-}
+  definicion: "definicion",
+};
 
 const BREAD = {
   all: "Todos los servicios",
   color: "Color",
   corte: "Cortes",
   ritual: "Rituales",
-  definicion: "Definiciones"
-}
+  definicion: "Definiciones",
+};
 
 const ALL_SERVICES = [
   {
     image: "./images/image5.jpg",
     service_name: "color base con aclaracion",
     type_service: TYPE_SERVICES.color,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image6.jpg",
     service_name: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",
     type_service: TYPE_SERVICES.color,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image7.jpg",
     service_name: "Color base sin aclaracion",
     type_service: TYPE_SERVICES.color,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image8.jpg",
     service_name: "babylights",
     type_service: TYPE_SERVICES.color,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image9.jpg",
     service_name: "corte de forma",
     type_service: TYPE_SERVICES.corte,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image10.jpg",
     service_name: "corte de puntas",
     type_service: TYPE_SERVICES.corte,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image11.jpg",
     service_name: "Ritual Infantil",
     type_service: TYPE_SERVICES.ritual,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image12.jpg",
     service_name: "ritual EN TRANSICIÓN CAPILAR",
     type_service: TYPE_SERVICES.ritual,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image13.jpg",
     service_name: "RITUAL HIDRATANTE",
     type_service: TYPE_SERVICES.ritual,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image14.jpg",
     service_name: "Cita De Definición",
     type_service: TYPE_SERVICES.definicion,
-    path: "#"
+    path: "#",
   },
   {
     image: "./images/image15.jpg",
     service_name: "Cita Definición Infantil",
     type_service: TYPE_SERVICES.definicion,
-    path: "#"
+    path: "#",
   },
-]
+];
 
 export default function AllServicesPage() {
   const [filterValue, setFilterValue] = useState("all");
-  const [dataServices, setDataServices] = useState(ALL_SERVICES)
+  const [dataServices, setDataServices] = useState(ALL_SERVICES);
 
+  useEffect(() => {
+    if (filterValue === "all") return setDataServices(ALL_SERVICES);
+    const filterServices = ALL_SERVICES.filter((service) => {
+      return service.type_service === filterValue;
+    });
 
-  useEffect( () => {
-    if(filterValue === "all") return setDataServices(ALL_SERVICES)
-    const filterServices = ALL_SERVICES.filter( (service) => {return service.type_service === filterValue})
-
-    setDataServices(filterServices)
-  }, [filterValue])
+    setDataServices(filterServices);
+  }, [filterValue]);
 
   return (
     <section className="section-contained-lg section-all-services-container">
@@ -116,15 +117,14 @@ export default function AllServicesPage() {
       <div className="all-services-container">
         <h1>{BREAD[filterValue]}</h1>
         <div className="services-by-type-container">
-          {
-            dataServices.map( (service) => (
-              <div className="service-by-type-item">
+          {dataServices.map((service) => (
+            <div className="service-by-type-item" key={service.service_name}>
               <div className="service-item-image">
                 <img src={service.image} alt="" />
               </div>
               <div className="service-item-header">
                 <h2>{service.service_name}</h2>
-  
+
                 <div className="service-item-header-buttons">
                   <a className="btn btn-outline">Ver Mas</a>{" "}
                   <a className="btn btn-primary service-item-header-button-whatsapp">
@@ -136,8 +136,7 @@ export default function AllServicesPage() {
                 </div>
               </div>
             </div>
-            ))
-          }
+          ))}
         </div>
       </div>
     </section>
