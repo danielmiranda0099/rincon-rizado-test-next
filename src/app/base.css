@@ -1,55 +1,55 @@
 :root {
   font-size: 16px;
 
-  --cc-size-px:   1px;
-  --cc-size-px2:  calc(1rem * 0.125); /*2px 1.5px 1px*/
-  --cc-size-px3:  calc(1rem * 0.25);  /*4px 3px 2px*/
-  --cc-size-px4:  calc(1rem * 0.375); /*6px 4.5px 3px*/
-  --cc-size-px5:  calc(1rem * 0.5);   /*8px 6px 4px*/
-  --cc-size-px6:  calc(1rem * 0.625); /*10px 7.5px 5px*/
-  --cc-size-px7:  calc(1rem * 0.75);  /*12px 9px 6px*/
-  --cc-size-px8:  calc(1rem * 0.875); /*14px 10.5px 7px*/
+  --cc-size-px: 1px;
+  --cc-size-px2: calc(1rem * 0.125); /*2px 1.5px 1px*/
+  --cc-size-px3: calc(1rem * 0.25); /*4px 3px 2px*/
+  --cc-size-px4: calc(1rem * 0.375); /*6px 4.5px 3px*/
+  --cc-size-px5: calc(1rem * 0.5); /*8px 6px 4px*/
+  --cc-size-px6: calc(1rem * 0.625); /*10px 7.5px 5px*/
+  --cc-size-px7: calc(1rem * 0.75); /*12px 9px 6px*/
+  --cc-size-px8: calc(1rem * 0.875); /*14px 10.5px 7px*/
 
-  --cc-size-1:    calc(1rem * 1);  /*16px 12px 8px*/
-  --cc-size-1x:   calc(1rem * 1.25); /*20px 15px 10px*/
-  --cc-size-1x2:  calc(1rem * 1.5); /*24px 18px 12px*/
-  --cc-size-1x3:  calc(1rem * 1.75); /*28px 21px 14px*/
+  --cc-size-1: calc(1rem * 1); /*16px 12px 8px*/
+  --cc-size-1x: calc(1rem * 1.25); /*20px 15px 10px*/
+  --cc-size-1x2: calc(1rem * 1.5); /*24px 18px 12px*/
+  --cc-size-1x3: calc(1rem * 1.75); /*28px 21px 14px*/
 
-  --cc-size-2:    calc(1rem * 2);  /*32px 24px 16px*/
-  --cc-size-2x:   calc(1rem * 2.25); /*36px 27px 18px*/
-  --cc-size-2x2:  calc(1rem * 2.5); /*40px 30px 20px*/
-  --cc-size-2x3:  calc(1rem * 2.75); /*44px 33px 22px*/
+  --cc-size-2: calc(1rem * 2); /*32px 24px 16px*/
+  --cc-size-2x: calc(1rem * 2.25); /*36px 27px 18px*/
+  --cc-size-2x2: calc(1rem * 2.5); /*40px 30px 20px*/
+  --cc-size-2x3: calc(1rem * 2.75); /*44px 33px 22px*/
 
-  --cc-size-3:    calc(1rem * 3); /*48px 36px 24px*/
-  --cc-size-3x:   calc(1rem * 3.25); /*52px 39px 26px*/
-  --cc-size-3x2:  calc(1rem * 3.5); /*56px 42px 28px*/
-  --cc-size-3x3:  calc(1rem * 3.75); /*60px 45px 30px*/
+  --cc-size-3: calc(1rem * 3); /*48px 36px 24px*/
+  --cc-size-3x: calc(1rem * 3.25); /*52px 39px 26px*/
+  --cc-size-3x2: calc(1rem * 3.5); /*56px 42px 28px*/
+  --cc-size-3x3: calc(1rem * 3.75); /*60px 45px 30px*/
 
-  --cc-size-4:    calc(1rem * 4);  /*64px 48px 32px*/
-  --cc-size-4x:   calc(1rem * 4.25); /*68px 51px 34px*/
+  --cc-size-4: calc(1rem * 4); /*64px 48px 32px*/
+  --cc-size-4x: calc(1rem * 4.25); /*68px 51px 34px*/
 
-  --cc-size-5:    calc(1rem * 5);  /*80px 60px 40px*/
-  --cc-size-6:    calc(1rem * 6);  /*96px 72px 48px*/
-  --cc-size-7:    calc(1rem * 7);  /*112px 84px 56px*/
-  --cc-size-8:    calc(1rem * 8);  /*128px 96px 64px*/
-  --cc-size-9:    calc(1rem * 9);  /*144px 108px 72px*/
-  --cc-size-10:   calc(1rem * 10); /*160px 120px 80px*/
-  --cc-size-11:   calc(1rem * 11); /*176px 132px 88px*/
-  --cc-size-12:   calc(1rem * 12); /*192px 144px 96px*/
-  --cc-size-13:   calc(1rem * 13); /*208px 156px 104px*/
-  --cc-size-14:   calc(1rem * 14); /*224px 168px 112px*/
-  --cc-size-15:   calc(1rem * 15); /*240px 180px 120px*/
-  --cc-size-16:   calc(1rem * 16); /*256px 192px 128px*/
-  --cc-size-18:   calc(1rem * 18); /*288px 216px 144px*/
-  --cc-size-20:   calc(1rem * 20); /*320px 240px 160px*/
-  --cc-size-24:   calc(1rem * 24); /*384px 288px 192px*/
-  --cc-size-26:   calc(1rem * 26); /*384px 288px 192px*/
-  --cc-size-28:   calc(1rem * 28); /*384px 288px 192px*/
-  --cc-size-30:   calc(1rem * 30); /*384px 288px 192px*/
-  --cc-size-34:   calc(1rem * 34); /*384px 288px 192px*/
-  --cc-size-40:   calc(1rem * 40); /*384px 288px 192px*/
-  --cc-size-44:   calc(1rem * 44); /*384px 288px 192px*/
-  --cc-size-50:   calc(1rem * 50); /*384px 288px 192px*/
+  --cc-size-5: calc(1rem * 5); /*80px 60px 40px*/
+  --cc-size-6: calc(1rem * 6); /*96px 72px 48px*/
+  --cc-size-7: calc(1rem * 7); /*112px 84px 56px*/
+  --cc-size-8: calc(1rem * 8); /*128px 96px 64px*/
+  --cc-size-9: calc(1rem * 9); /*144px 108px 72px*/
+  --cc-size-10: calc(1rem * 10); /*160px 120px 80px*/
+  --cc-size-11: calc(1rem * 11); /*176px 132px 88px*/
+  --cc-size-12: calc(1rem * 12); /*192px 144px 96px*/
+  --cc-size-13: calc(1rem * 13); /*208px 156px 104px*/
+  --cc-size-14: calc(1rem * 14); /*224px 168px 112px*/
+  --cc-size-15: calc(1rem * 15); /*240px 180px 120px*/
+  --cc-size-16: calc(1rem * 16); /*256px 192px 128px*/
+  --cc-size-18: calc(1rem * 18); /*288px 216px 144px*/
+  --cc-size-20: calc(1rem * 20); /*320px 240px 160px*/
+  --cc-size-24: calc(1rem * 24); /*384px 288px 192px*/
+  --cc-size-26: calc(1rem * 26); /*384px 288px 192px*/
+  --cc-size-28: calc(1rem * 28); /*384px 288px 192px*/
+  --cc-size-30: calc(1rem * 30); /*384px 288px 192px*/
+  --cc-size-34: calc(1rem * 34); /*384px 288px 192px*/
+  --cc-size-40: calc(1rem * 40); /*384px 288px 192px*/
+  --cc-size-44: calc(1rem * 44); /*384px 288px 192px*/
+  --cc-size-50: calc(1rem * 50); /*384px 288px 192px*/
 
   --cc-text-sm: var(--cc-size-px8);
   --cc-text-smx: var(--cc-size-1);
@@ -72,12 +72,74 @@
   --cc-radius-lgx: 26px;
   --cc-radius-lgx2: 32px;
 
+  /******************** COLORS *********************************************/
+  /* --cc-color-purple-primary: #af9fea; */
+  /* --cc-color-purple-primary: #C490E4; */
+  /* --cc-color-purple-primary: #A685E2; */
+  /* --cc-color-purple-primary: #b288e8; */
+  /* --cc-color-purple-primary: #897dd1; */
+
+  --cc-color-purple-primary: #bc9fd3;
+  --cc-color-purple-secundary: #9287d2;
+
+  /* --cc-color-purple-primary: #FCE2DB; */
+
+  --cc-color-purple-dark-primary: #26083b;
+  /* --cc-color-purple-dark-primary: #57227c; */
+  /* --cc-color-purple-secundary:#DA95FF; */
   --cc-color-gray: #8291a7;
+
+  --cc-color-blue-100: #bfede3;
+  --cc-color-blue-200: #98ddff;
+
+  --cc-color-pink-100: #ff97c7;
+  --cc-color-pink-200: #da95ff ;
+
+  /********************* GRADIENTS  ***********************************************/
+  --cc-gradient-primary: linear-gradient(157deg, var(--cc-color-blue-100)  11%, var(--cc-color-blue-200) 29%, var(--cc-color-pink-200) 59%, var(--cc-color-pink-100) 82%);
 }
 main {
   width: 100%;
   min-height: 50dvh;
 }
+
+/********** FONTS Marcellus  ***************** */
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/********** FONTS Playfair Display  ***************** */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-VariableFont.woff2")
+      format("woff2-variations"),
+    url("/fonts/PlayfairDisplay-VariableFont.woff2") format("woff2");
+  font-weight: 400 900; /* Especifica el rango de pesos disponibles */
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Italic-VariableFont.woff2")
+    format("woff2-variations");
+  font-weight: 400 900; /* Especifica el rango de pesos disponibles */
+  font-style: italic;
+}
+
+* {
+  font-family: "Marcellus", "Times", "Georgia", "Garamond", "serif";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", "Times", "Georgia", "Garamond", "serif";
+}
+
+
+/*********************************/
 
 .section-contained-sm {
   margin: var(--cc-size-4x) var(--cc-size-15);
@@ -125,29 +187,29 @@ main {
 }
 
 .text-bold-sm {
- font-weight: 550;
+  font-weight: 550;
 }
 .text-bold-smx {
   font-weight: 600;
- }
- .text-bold-smx2 {
+}
+.text-bold-smx2 {
   font-weight: 650;
- }
- .text-bold-md {
+}
+.text-bold-md {
   font-weight: 700;
- }
+}
 .text-bold-mdx {
   font-weight: 750;
- }
- .text-bold-mdx2 {
+}
+.text-bold-mdx2 {
   font-weight: 800;
- }
- .text-bold-lg {
+}
+.text-bold-lg {
   font-weight: 850;
- }
- .text-bold-lgx {
+}
+.text-bold-lgx {
   font-weight: 900;
- }
+}
 
 /* TODO: Normalize in var colors */
 .text-yellow {
@@ -157,19 +219,21 @@ main {
   color: #fdaa62;
 }
 .text-purple {
-  color: #ccb0f3;
+  color: var(--cc-color-purple-primary);
 }
 /* TODO: NO quiero text-bg-<color> solo bg-<color> */
 .text-bg-yellow {
-  background-color: rgb(248, 248, 138);
+  background-color: #DA95FF;
 }
 .text-bg-orange {
   background-color: #fdaa62;
 }
 .text-bg-purple {
-  background-color: #ccb0f3;
+  background-color: var(--cc-color-purple-primary);
 }
 .text-highlight {
+  font-family: inherit;
+  font-weight: inherit;
   padding: var(--cc-size-px) var(--cc-size-px6);
   border-radius: var(--cc-radius-md);
 }
@@ -266,7 +330,7 @@ main {
 }
 .margin-top-lgx2 {
   margin-top: var(--cc-size-3x3);
-} 
+}
 
 /****************** PADDING *****************************/
 .padding-sm {
@@ -287,7 +351,7 @@ main {
 .padding-mdx {
   padding: var(--cc-size-1x3);
 }
-.ppadding-mdx2 {
+.padding-mdx2 {
   padding: var(--cc-size-2x);
 }
 .padding-lg {
@@ -301,7 +365,7 @@ main {
 }
 
 /**** CENTER ****/
-.center-x {  
+.center-x {
   margin-inline: auto;
   display: block;
 }
@@ -312,46 +376,67 @@ main {
   padding: var(--cc-size-1x2);
   border-radius: var(--cc-radius-mdx2);
   font-size: var(--cc-size-1x);
-  font-weight: bold;
+  font-weight: 900;
   width: fit-content;
   height: fit-content;
   text-decoration: none;
 }
 .btn-primary {
-  /* TODO: create Var Color */
-  background-color: #3592e9;
-  color: white;
+  /* background-color: var(--cc-color-purple-primary); */
+  background: linear-gradient(
+    157deg,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  color: rgb(255, 255, 255);
 }
 .btn-outline {
-  /* TODO: create Var Color */
   background-color: inherit;
-  color: #3c435a;
-  border: 2px solid #3c435a;
+  color: var(--cc-color-purple-dark-primary);
+  /* border: 2px solid var(--cc-color-purple-dark-primary); */
+
+  position: relative;
+  border: 2px solid transparent; /* Border transparente */
+}
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--cc-color-purple-dark-primary), var(--cc-color-purple-primary));
+  z-index: -1; /* Para que el pseudo-elemento quede detrás del botón */
+  border-radius: var(--cc-radius-mdx2);
+  padding: 2px; /* Ajusta el tamaño del borde según sea necesario */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude; /* Ajuste para compatibilidad con navegadores */
 }
 
 /********** NAVIGATION SLIDER ********************/
 .swiper-button-prev,
-.swiper-button-next{
+.swiper-button-next {
   background-color: rgba(255, 255, 255, 0.7) !important;
   border-radius: 100%;
   width: var(--cc-size-4x) !important;
   height: var(--cc-size-4x) !important;
   top: calc(55% - calc(var(--cc-size-4x) / 2));
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: rgba(0, 0, 0, 0.7) ;
+  color: rgba(0, 0, 0, 0.7);
   font-size: var(--cc-text-mdx2) !important;
   font-weight: 900;
 }
 .swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled{
+.swiper-button-next.swiper-button-disabled {
   pointer-events: auto !important;
 }
-
-
-
 
 /* BREAKPOINTS
   sm	width <= 590px	
@@ -393,13 +478,13 @@ main {
   }
 }
 
-@media screen and ( 1700px < width <= 2200px) {
+@media screen and (1700px < width <= 2200px) {
   :root {
     font-size: 17px;
   }
 }
 
-@media screen and ( width > 2200px) {
+@media screen and (width > 2200px) {
   :root {
     font-size: 20px;
   }

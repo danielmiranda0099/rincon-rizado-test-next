@@ -16,8 +16,8 @@
 }
 .test-campaign h2 {
   width: 50%;
-  font-size: var(--cc-text-lg);
-  font-weight: 500;
+  font-size: var(--cc-text-lgx);
+  font-weight: 700;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@
   top: 0;
   left: var(--cc-size-px2);
   transform: rotate(-10deg);
-  background-color: #bd99ee;
+  background-color: var(--cc-color-purple-primary)
 }
 .test-campaign-card.campaign-card-right {
   top: 0;
