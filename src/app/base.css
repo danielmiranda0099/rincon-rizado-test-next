@@ -511,8 +511,8 @@ h4 {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: var(--cc-size-1);
-  height: var(--cc-size-1);
+  width: var(--cc-size-px8);
+  height: var(--cc-size-px8);
   background: var(--cc-gradient-purple-2);
   opacity: 0.4;
 }
