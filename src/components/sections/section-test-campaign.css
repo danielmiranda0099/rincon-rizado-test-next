@@ -42,13 +42,13 @@
   top: 0;
   left: var(--cc-size-px2);
   transform: rotate(-10deg);
-  background-color: var(--cc-color-purple-primary)
+  background-color: var(--cc-color-purple-secundary);
 }
 .test-campaign-card.campaign-card-right {
   top: 0;
   right: var(--cc-size-px2);
   transform: rotate(10deg);
-  background-color: #e25f9a;
+  background-color: var(--cc-color-pink-100);
 }
 
 @media screen and (width <= 590px) {

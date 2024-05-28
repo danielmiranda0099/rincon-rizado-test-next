@@ -126,12 +126,12 @@ export default function AllServicesPage() {
                 <h2>{service.service_name}</h2>
 
                 <div className="service-item-header-buttons">
-                  <a className="btn btn-outline">Ver Mas</a>{" "}
+                  <a className="btn btn-outline">Ver Mas</a>
                   <a className="btn btn-primary service-item-header-button-whatsapp">
                     Agendar
                     <span>
                       <IconWhatsApp size="1.7rem" color="white" />
-                    </span>{" "}
+                    </span>
                   </a>
                 </div>
               </div>

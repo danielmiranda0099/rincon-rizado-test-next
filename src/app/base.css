@@ -93,10 +93,58 @@
   --cc-color-blue-200: #98ddff;
 
   --cc-color-pink-100: #ff97c7;
-  --cc-color-pink-200: #da95ff ;
+  --cc-color-pink-200: #da95ff;
+
+  --cc-color-snow-100: #f5eded;
 
   /********************* GRADIENTS  ***********************************************/
   --cc-gradient-primary: linear-gradient(157deg, var(--cc-color-blue-100)  11%, var(--cc-color-blue-200) 29%, var(--cc-color-pink-200) 59%, var(--cc-color-pink-100) 82%);
+  --cc-gradient-purple-1: linear-gradient(
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-top: linear-gradient(
+    to top,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-right: linear-gradient(
+    to right,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-left: linear-gradient(
+    to left,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-diag1: linear-gradient(
+    to right top,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-diag2: linear-gradient(
+    to right bottom,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-diag3: linear-gradient(
+    to left bottom,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  --cc-gradient-purple-1-diag3: linear-gradient(
+    to left top,
+    var(--cc-color-purple-secundary) 20%,
+    var(--cc-color-purple-primary) 80%
+  );
+  
+  
+  --cc-gradient-purple-2: linear-gradient(
+    157deg,
+    var(--cc-color-purple-secundary) 30%,
+    var(--cc-color-purple-dark-primary) 70%
+  );
 }
 main {
   width: 100%;
@@ -222,15 +270,31 @@ h4 {
   color: var(--cc-color-purple-primary);
 }
 /* TODO: NO quiero text-bg-<color> solo bg-<color> */
-.text-bg-yellow {
-  background-color: #DA95FF;
-}
-.text-bg-orange {
-  background-color: #fdaa62;
-}
-.text-bg-purple {
+.bg-purple-100 {
   background-color: var(--cc-color-purple-primary);
 }
+.bg-purple-200 {
+  background-color: var(--cc-color-purple-secundary);
+}
+.bg-purple-300 {
+  background-color: var(--cc-color-purple-dark-primary);
+}
+.bg-blue-100 {
+  background-color: var(--cc-color-blue-100);
+}
+.bg-blue-200 {
+  background-color: var(--cc-color-blue-200);
+}
+.bg-pink-100 {
+  background-color: var(--cc-color-pink-100);
+}
+.bg-pink-200 {
+  background-color: var(--cc-color-pink-200);
+}
+.bg-snow-100 {
+  background-color: var(--cc-color-snow-100);
+}
+
 .text-highlight {
   font-family: inherit;
   font-weight: inherit;
@@ -382,12 +446,7 @@ h4 {
   text-decoration: none;
 }
 .btn-primary {
-  /* background-color: var(--cc-color-purple-primary); */
-  background: linear-gradient(
-    157deg,
-    var(--cc-color-purple-secundary) 20%,
-    var(--cc-color-purple-primary) 80%
-  );
+  background: var(--cc-gradient-purple-1-diag2);
   color: rgb(255, 255, 255);
 }
 .btn-outline {
@@ -416,7 +475,7 @@ h4 {
   mask-composite: exclude; /* Ajuste para compatibilidad con navegadores */
 }
 
-/********** NAVIGATION SLIDER ********************/
+/********** SWIPER ********************/
 .swiper-button-prev,
 .swiper-button-next {
   background-color: rgba(255, 255, 255, 0.7) !important;
@@ -436,6 +495,33 @@ h4 {
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   pointer-events: auto !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  padding: var(--cc-size-1);
+  border-radius: var(--cc-radius-mdx2);
+
+  background-color: var(--cc-color-snow-100);
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: var(--cc-size-1);
+  height: var(--cc-size-1);
+  background: var(--cc-gradient-purple-2);
+  opacity: 0.4;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: var(--cc-size-1x2);
+  height: var(--cc-size-1x2);
+  background: var(--cc-gradient-purple-1);
 }
 
 /* BREAKPOINTS

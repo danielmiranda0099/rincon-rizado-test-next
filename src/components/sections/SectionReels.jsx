@@ -19,8 +19,8 @@ export function SectionReels() {
       <div className="reels-slider-header">
         <h2 className="text-lg text-bold-500 text-center margin-bottom-smx">
           Sigueme en mis redes sociales para más{" "}
-          <span className="text-bg-yellow text-highlight">Tips</span> y
-          <span className="text-bg-yellow text-highlight">Trucos</span>
+          <span className="bg-pink-100 text-highlight">Tips</span> y
+          <span className="bg-pink-100 text-highlight">Trucos</span>
         </h2>
         <p className="text-smx2 text-center margin-bottom-mdx">
           Puedes econtrar tip, trucos y recomensaciones, Lorem ipsum, dolor sit

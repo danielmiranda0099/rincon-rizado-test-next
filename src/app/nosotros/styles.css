@@ -46,9 +46,10 @@
 }
 .our-history-line-time-item .line-time-year {
   font-size: var(--cc-text-mdx2);
-  background-color: var(--cc-color-gray);
+  background-color: var(--cc-color-purple-primary);
   padding: var(--cc-size-px5);
   border-radius: var(--cc-radius-mdx);
+  color: white;
   height: fit-content;
 }
 .our-history-line-time-content h2 {
@@ -80,7 +81,7 @@
   left: calc(4px + var(--cc-text-mdx2) + (var(--cc-radius-mdx) / 2));
   width: 2px;
   height: 100%;
-  background-color: var(--cc-color-gray);
+  background-color: var(--cc-color-purple-primary);
   z-index: -1;
 }
 

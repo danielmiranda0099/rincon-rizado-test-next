@@ -4,7 +4,7 @@ export function SectionTest() {
   return (
     <section className="section-contained-lg  test-campaign">
       <h2>
-        ¿Quieres Hacer Un <span className="text-bg-orange text-highlight">Test</span> Para Saber Que Tipo De Productos Son Para Ti?
+        ¿Quieres Hacer Un <span className="bg-pink-100 text-highlight">Test</span> Para Saber Que Tipo De Productos Son Para Ti?
       </h2>
 
       <div className="test-campaign-cards-container">
