@@ -186,6 +186,22 @@ h4 {
   font-family: "Playfair Display", "Times", "Georgia", "Garamond", "serif";
 }
 
+select {
+  background-color: var(--cc-color-snow-100);
+  border: 2px solid var(--cc-color-purple-secundary);
+}
+*::selection {
+  background-color: var(--cc-color-purple-primary);
+}
+option:checked {
+  background-color: var(--cc-color-purple-primary); /* Puede que no funcione en todos los navegadores */
+  color: white;
+}
+
+select option:hover {
+  background-color: #ffb7b7 !important; /* Puede que no funcione en todos los navegadores */
+  color: #000;
+}
 
 /*********************************/
 
