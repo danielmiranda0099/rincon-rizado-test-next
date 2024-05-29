@@ -453,13 +453,17 @@ select option:hover {
 
 /******* BUTTONS ************/
 .btn {
-  padding: var(--cc-size-1x2);
+  padding: var(--cc-size-1x2) var(--cc-size-2);
   border-radius: var(--cc-radius-mdx2);
   font-size: var(--cc-size-1x);
   font-weight: 900;
   width: fit-content;
   height: fit-content;
   text-decoration: none;
+  display: flex;
+  gap: var(--cc-size-px8);
+  justify-content: center;
+  align-items: center;
 }
 .btn-primary {
   background: var(--cc-gradient-purple-1-diag2);
@@ -489,6 +493,16 @@ select option:hover {
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude; /* Ajuste para compatibilidad con navegadores */
+}
+
+.btn-snow {
+  background-color: var(--cc-color-snow-100);
+  color: var(--cc-color-purple-dark-primary)
+}
+.btn-snow-outline {
+  background-color: inherit;
+  color: var(--cc-color-snow-100);
+  border: 2px solid var(--cc-color-snow-100);
 }
 
 /********** SWIPER ********************/

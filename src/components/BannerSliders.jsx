@@ -9,7 +9,8 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import './banner-slider.css';
+import "./banner-slider.css";
+import { IconWhatsApp } from "./icons";
 
 export function BannerSlider() {
   return (
@@ -29,7 +30,53 @@ export function BannerSlider() {
     >
       <SwiperSlide>
         <div className="banner-slider-content">
+          <img src="/images/_DSC3245.webp" />
+          <h2>RINCON CURLY</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
+          <div className="banner-buttons-container">
+            <a className="btn btn-primary service-item-header-button-whatsapp">
+              Agendar
+              <span>
+                <IconWhatsApp size="1.7rem" color="white" />
+              </span>
+            </a>
+            <a className="btn btn-snow">Ver Productos</a>
+          </div>
+          
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className="banner-slider-content">
+          <img src="/images/_DSC3263.webp" />
+          <h2>RINCON CURLY</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
+          <div className="banner-buttons-container">
+            <a className="btn btn-primary service-item-header-button-whatsapp">
+              Agendar
+              <span>
+                <IconWhatsApp size="1.7rem" color="white" />
+              </span>
+            </a>
+            <a className="btn btn-snow">Ver Productos</a>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className="banner-slider-content">
           <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
+          <h2>RINCON CURLY</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
+          <div className="banner-buttons-container">
+            <a className="btn btn-primary service-item-header-button-whatsapp">
+              Agendar
+              <span>
+                <IconWhatsApp size="1.7rem" color="white" />
+              </span>
+            </a>
+            <a className="btn btn-snow">Ver Productos</a>
+          </div>
         </div>
       </SwiperSlide>
 
