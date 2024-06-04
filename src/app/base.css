@@ -145,6 +145,26 @@
     var(--cc-color-purple-secundary) 30%,
     var(--cc-color-purple-dark-primary) 70%
   );
+
+  --cc-gradient-snow: linear-gradient(
+    var(--cc-color-snow-100),
+    var(--cc-color-purple-secundary)
+  );
+  --cc-gradient-snow-right: linear-gradient(
+    to right,
+    var(--cc-color-snow-100),
+    var(--cc-color-purple-secundary)
+  );
+  --cc-gradient-snow-top: linear-gradient(
+    to top,
+    var(--cc-color-snow-100) 10%,
+    var(--cc-color-purple-secundary) 50%
+  );
+  --cc-gradient-snow-left: linear-gradient(
+    to left,
+    var(--cc-color-snow-100),
+    var(--cc-color-purple-secundary)
+  );
 }
 main {
   width: 100%;
@@ -596,12 +616,12 @@ select option:hover {
 
 @media screen and (1700px < width <= 2200px) {
   :root {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
 @media screen and (width > 2200px) {
   :root {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
