@@ -27,9 +27,12 @@
 .swiper-image-diff{
   width: 400px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   /* background-color: red; */
 }
+/* .swiper-image-diff .swiper-pagination {
+  
+} */
 .swiper-item {
   background-position: center;
   background-size: cover;

@@ -26,7 +26,7 @@ export function BannerSlider() {
         clickable: true,
       }}
       modules={[Navigation, Pagination, Autoplay]}
-      className="mySwiper"
+      className="banner-slider-container"
     >
       <SwiperSlide>
         <div className="banner-slider-content">

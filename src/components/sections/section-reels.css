@@ -1,6 +1,12 @@
-.reels-slider-container {
+.reels-slider-swiper-container {
+  position: relative;
 }
-
+.reels-slider-container .swiper {
+  position: unset;
+}
+.reels-slider-container .swiper .swiper-pagination {
+  bottom: calc( var(--cc-size-5) * -1 );
+}
 .reels-slider-container iframe {
   height: 100%;
   border-radius: var(--cc-radius-lg);

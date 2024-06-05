@@ -517,7 +517,8 @@ select option:hover {
 
 .btn-snow {
   background-color: var(--cc-color-snow-100);
-  color: var(--cc-color-purple-dark-primary)
+  color: var(--cc-color-purple-dark-primary);
+  border: 2px solid var(--cc-color-snow-100);
 }
 .btn-snow-outline {
   background-color: inherit;
@@ -554,23 +555,23 @@ select option:hover {
   width: fit-content !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  padding: var(--cc-size-1);
+  padding: var(--cc-size-px7)  var(--cc-size-1);
   border-radius: var(--cc-radius-mdx2);
 
   background-color: var(--cc-color-snow-100);
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: var(--cc-size-px8);
-  height: var(--cc-size-px8);
+  width: var(--cc-size-px7);
+  height: var(--cc-size-px7);
   background: var(--cc-gradient-purple-2);
   opacity: 0.4;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
-  width: var(--cc-size-1x2);
-  height: var(--cc-size-1x2);
+  width: var(--cc-size-1);
+  height: var(--cc-size-1);
   background: var(--cc-gradient-purple-1);
 }
 

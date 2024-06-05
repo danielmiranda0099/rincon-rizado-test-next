@@ -53,33 +53,41 @@ export default function ServisePage({ params }) {
         <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
       </div> */}
 
-      <Swiper
-        tag="div"
-        slidesPerView="auto"
-        spaceBetween="16"
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Navigation, Pagination]}
-        className="section-contained-full service-result-images-container"
-      >
-        <SwiperSlide tag="div" className="service-result-images">
-          <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
-        </SwiperSlide>
-        <SwiperSlide tag="div" className="service-result-images">
-          <img src="https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg" />
-        </SwiperSlide>
-        <SwiperSlide tag="div" className="service-result-images">
-          <img src="/images/image-banner-products-favorite.jpg" />
-        </SwiperSlide>
-        <SwiperSlide tag="div" className="service-result-images">
-          <img src="/images/image11.jpg" />
-        </SwiperSlide>
-        <SwiperSlide tag="div" className="service-result-images">
-          <img src="/images/image12.jpg" />
-        </SwiperSlide>
-      </Swiper>
+      <div className="divisor-layout-container">
+        <div className="divisor-layout-item"></div>
+
+        <div className="service-result-images-swiper-container">
+          <Swiper
+            tag="div"
+            slidesPerView="auto"
+            spaceBetween="16"
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Navigation, Pagination]}
+            className="section-contained-full service-result-images-container"
+          >
+            <SwiperSlide tag="div" className="service-result-images">
+              <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
+            </SwiperSlide>
+            <SwiperSlide tag="div" className="service-result-images">
+              <img src="https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg" />
+            </SwiperSlide>
+            <SwiperSlide tag="div" className="service-result-images">
+              <img src="/images/image-banner-products-favorite.jpg" />
+            </SwiperSlide>
+            <SwiperSlide tag="div" className="service-result-images">
+              <img src="/images/image11.jpg" />
+            </SwiperSlide>
+            <SwiperSlide tag="div" className="service-result-images">
+              <img src="/images/image12.jpg" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        <div className="divisor-layout-item"></div>
+      </div>
 
       <div className="section-contained-sm service-content-offers">
         <h2 className="text-lg text-center margin-bottom-mdx">

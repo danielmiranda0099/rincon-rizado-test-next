@@ -1,7 +1,14 @@
 .container-section-card-services {
-  margin-bottom: var(--cc-size-2x3);
+  position: relative;
+  margin-bottom: var(--cc-size-6);
+  margin-top: 0;
 }
-
+.container-section-card-services .swiper {
+  position: unset;
+}
+.container-section-card-services .swiper-pagination {
+  bottom: calc( var(--cc-size-4) * -1);
+}
 .header-card-services {
   display: flex;
   align-items: center;
