@@ -18,12 +18,9 @@ export function SectionFavoriteProducts() {
       <div className="favorite-products-banner">
         <div className="favorite-products-banner-content">
           <h2 className="text-lg text-bold-smx">
-            Tenemos Todos Los Productos Para Ti
+            Encuentra el producto ideal para ti, acorde a cada necesidad. 
+             {/*Contamos con los mejores productos, ideales a cada necesidad.*/}
           </h2>
-          <p className="text-smx2 text-bold-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequatur, deleniti.
-          </p>
           <button className="btn btn-primary">Ver Todos Los Productos</button>
         </div>
         <div className="favorite-products-banner-background"></div>

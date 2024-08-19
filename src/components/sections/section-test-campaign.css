@@ -20,6 +20,10 @@
   font-weight: 700;
   text-align: center;
 }
+.test-campaign p {
+  width: 50%;
+  text-align: center;
+}
 
 .test-campaign-cards-container {
   position: relative;

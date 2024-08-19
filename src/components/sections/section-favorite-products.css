@@ -28,10 +28,11 @@
 .favorite-products-banner-background {
   width: 100%;
   height: 100%;
-  filter: blur(2px);
-  background-image: url("/images/image-banner-products-favorite.jpg");
+  filter: blur(0px);
+  background-image: url("/images/DSC_7604.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  object-position: 100% 100%;
 }
 
 .favorite-products-slider {

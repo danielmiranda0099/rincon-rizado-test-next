@@ -15,8 +15,11 @@ export function SectionImageDiff() {
   return (
     <div className='section-contained-sm image-diff-container'>
       <div className='image-diff-header'>
-      <h2>Mira <span className="text-highlight bg-purple-100">Nuestro Resultados</span>, Nuestros Procesos Son Los Mejores</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eos incidunt velit tenetur doloribus eaque.</p>
+      <h2>Mira alguno de nuestros resultados</h2>
+      <p>
+      Nuestra especialidad es el cuidado capilar y estética de los cabellos afro rizados, 
+      buscamos que te sientas orgullosa y segura de lucir tu cabello natural con confianza.
+      </p>
       </div>
      <div>
      <Swiper

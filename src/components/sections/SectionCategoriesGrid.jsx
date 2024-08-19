@@ -9,23 +9,23 @@ export function SectionCategoriesGrid() {
       </div>
       <div className="category-grid-item category-grid-item-2">
         <img src="/images/image2.jpg" />
-        <span>Acondicionador</span>
+        <span>Tratamientos Profundo</span>
       </div>
       <div className="category-grid-item category-grid-item-3">
         <img src="/images/image3.jpg" />
-        <span>Aceites</span>
+        <span>Aceites Capilares</span>
       </div>
       <div className="category-grid-item category-grid-item-4">
         <img src="/images/image4.jpg" />
-        <span>Aceesorios</span>
+        <span>Geles Moldeadores</span>
       </div>
       <div className="category-grid-item category-grid-item-5">
         <img src="/images/image5.jpg" />
-        <span>Espumas</span>
+        <span>Accesorios</span>
       </div>
       <div className="category-grid-item category-grid-item-6">
         <img src="/images/image6.jpg" />
-        <span>Cremas</span>
+        <span>Cremas De Peinar</span>
       </div>
     </div>
   );

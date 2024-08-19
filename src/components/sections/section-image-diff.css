@@ -17,7 +17,7 @@
   text-align: center;
 }
 .image-diff-header p {
-  font-size: var(--cc-text-smx2);
+  font-size: var(--cc-text-md);
   width: 70%;
   text-align: center;
   margin: 0 auto;

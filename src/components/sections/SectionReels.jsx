@@ -18,13 +18,11 @@ export function SectionReels() {
     <section className="section-contained-sm reels-slider-container">
       <div className="reels-slider-header">
         <h2 className="text-lg text-bold-500 text-center margin-bottom-smx">
-          Sigueme en mis redes sociales para más{" "}
-          <span className="bg-pink-100 text-highlight">Tips</span> y
-          <span className="bg-pink-100 text-highlight">Trucos</span>
+          Siguenos en nuestras redes sociales 
         </h2>
-        <p className="text-smx2 text-center margin-bottom-mdx">
-          Puedes econtrar tip, trucos y recomensaciones, Lorem ipsum, dolor sit
-          amet consectetur adipisicing elit. Officia?
+        <p className="text-md text-center margin-bottom-mdx">
+        para que no te pierdas todos los tips, enseñanzansas y recomendaciones que compartimos para el cuidado
+        de tus rizos.
         </p>
 
         <button className="btn margin-bottom-lgx2 center-x text-md"> Sigueme en Instagram <IconInstagram size="2.5rem" color="#fff" /></button>

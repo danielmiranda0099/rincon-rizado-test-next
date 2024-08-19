@@ -1,6 +1,6 @@
 export const COLOR_BASE_CON_ACLARACION = {
   slug: "color-base-con-aclaracion",
-  name_service: "color base con aclaracion",
+  name_service: "Color base con aclaracion",
   short_description: `En este servicio se crean nuevos look y color en tus rizos, ideal si buscas un cambio de color o
                       cobertura total de canas acuerdo con gustos y asesoría.`,
   service_includes: [

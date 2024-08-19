@@ -31,8 +31,9 @@ export function BannerSlider() {
       <SwiperSlide>
         <div className="banner-slider-content">
           <img src="/images/_DSC3245.webp" />
-          <h2>RINCON CURLY</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
+          <h2>RINCON RIZADO</h2>
+          <p>
+            Un espacio ideal para aprender a cuidar tu cabello natural, con nosotros encontraras asesoria, productos ideales de acuerdo a tu textura, ademas de estilistas idoneas para dejar tus rizos fantasticos!.</p>
           <div className="banner-buttons-container">
             <a className="btn btn-primary service-item-header-button-whatsapp">
               Agendar
@@ -48,7 +49,26 @@ export function BannerSlider() {
 
       <SwiperSlide>
         <div className="banner-slider-content">
-          <img src="/images/_DSC3263.webp" />
+          <img src="/images/IMG_1807_1950x.webp" />
+          <h2>BIENVENIDOS</h2>
+          <p>
+                  Nos llena de felicidad que hagas parte de nuestra comunidad rizada y quieras aprender a sacar la mejor version a tus rizos
+                </p>
+          <div className="banner-buttons-container">
+            <a className="btn btn-primary service-item-header-button-whatsapp">
+              Agendar
+              <span>
+                <IconWhatsApp size="1.7rem" color="white" />
+              </span>
+            </a>
+            <a className="btn btn-snow">Ver Productos</a>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className="banner-slider-content">
+          <img src="/images/DSC_7557.jpg" />
           <h2>RINCON CURLY</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
           <div className="banner-buttons-container">
@@ -65,36 +85,19 @@ export function BannerSlider() {
 
       <SwiperSlide>
         <div className="banner-slider-content">
-          <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
-          <h2>RINCON CURLY</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam.</p>
-          <div className="banner-buttons-container">
-            <a className="btn btn-primary service-item-header-button-whatsapp">
-              Agendar
-              <span>
-                <IconWhatsApp size="1.7rem" color="white" />
-              </span>
-            </a>
-            <a className="btn btn-snow">Ver Productos</a>
-          </div>
+          <img src="/images/IMG_1807_1950x.webp" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="banner-slider-content">
-          <img src="https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg" />
+          <img src="/images/Promo-Madres-RR-04.png" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="banner-slider-content">
-          <img src="https://images.pexels.com/photos/17547816/pexels-photo-17547816/free-photo-of-mujer-en-pie-de-pie-retrato.jpeg" />
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div className="banner-slider-content">
-          <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg" />
+          <img src="/images/Promo-whatsapp-03.png" />
         </div>
       </SwiperSlide>
     </Swiper>

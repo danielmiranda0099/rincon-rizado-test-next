@@ -24,7 +24,7 @@
   margin-left: var(--cc-size-1x);
 }
 .contact-info-items-container > .contact-info-item > p {
-  font-size: var(--cc-text-smx);
+  font-size: var(--cc-text-smx2);
 }
 
 @media screen and (width <= 590px) {
