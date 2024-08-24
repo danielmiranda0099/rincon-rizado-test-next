@@ -13,7 +13,7 @@ const SERVICES_MAIN = [
   {
     title: "CORTE DE FORMA",
     path: "/services/corte-de-forma",
-    image: "/images/image9.jpg",
+    image: "/images/services/corte-forma/unnamed-5.jpg" ,
   },
   {
     title: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",

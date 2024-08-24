@@ -4,13 +4,12 @@
 /* ************************* */
 .service-banner {
   position: relative;
-  background: rgba(107, 112, 255, 0.8);
+  /*background: rgba(107, 112, 255, 0.8);*/
 
-  background: var(--cc-gradient-snow-left);
+  /*background: var(--cc-gradient-snow-left);*/
   padding: var(--cc-size-3x);
   border-radius: var(--cc-radius-mdx);
-  color: white;
-  overflow: hidden;
+  
 
   margin-top: 0;
 }
@@ -27,14 +26,14 @@
 .service-banner-content-description {
   width: 60%;
   font-size: var(--cc-text-md);
-  max-height: calc(3 * 1.2em);
+  
 
-  -webkit-box-orient: vertical;
+  /*-webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   
   display: -webkit-box;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;*/
   
 }
 .service-banner-content > span {
@@ -48,6 +47,12 @@
 }
 .service-banner-price * {
   font-size: var(--cc-text-md);
+}
+
+.service-conditions {
+  width: 60%;
+  font-size: var(--cc-text-sm);
+  text-decoration: none !important;
 }
 
 /* ****************************** */

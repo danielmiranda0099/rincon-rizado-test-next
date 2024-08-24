@@ -204,6 +204,17 @@ h2,
 h3,
 h4 {
   font-family: "Playfair Display", "Times", "Georgia", "Garamond", "serif";
+  color: var(--cc-color-purple-dark-primary);
+  text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4::first-letter {
+  text-transform: uppercase;
+}
+p, span {
+  color: var(--cc-color-purple-dark-primary);
 }
 
 select {
