@@ -29,7 +29,7 @@ export default function ServisePage({ params }) {
 
           
             {
-              data.short_description.map( (description) => <p className="service-banner-content-description">{description} </p>)
+              data.short_description.map( (description, index) => <p className="service-banner-content-description" key={index}>{description} </p>)
             }
          
 
