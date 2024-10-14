@@ -1,15 +1,19 @@
-export function IconShopping({ size = "1rem", color="#2c3e50", className = "" }) {
+export function IconShopping({
+  size = "1rem",
+  color = "#2c3e50",
+  className = "",
+}) {
   return (
     <svg
       width={size}
       height={size}
       className={className}
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke={color}
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />

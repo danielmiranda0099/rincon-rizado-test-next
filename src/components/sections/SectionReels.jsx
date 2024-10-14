@@ -18,14 +18,17 @@ export function SectionReels() {
     <section className="section-contained-sm reels-slider-container">
       <div className="reels-slider-header">
         <h2 className="text-lg text-bold-500 text-center margin-bottom-smx">
-          Siguenos en nuestras redes sociales 
+          Siguenos en nuestras redes sociales
         </h2>
         <p className="text-md text-center margin-bottom-mdx">
-        para que no te pierdas todos los tips, enseñanzansas y recomendaciones que compartimos para el cuidado
-        de tus rizos.
+          para que no te pierdas todos los tips, enseñanzansas y recomendaciones
+          que compartimos para el cuidado de tus rizos.
         </p>
 
-        <button className="btn margin-bottom-lgx2 center-x text-md"> Sigueme en Instagram <IconInstagram size="2.5rem" color="#fff" /></button>
+        <button className="btn margin-bottom-lgx2 center-x text-md">
+          {" "}
+          Sigueme en Instagram <IconInstagram size="2.5rem" color="#fff" />
+        </button>
       </div>
 
       <div className="reels-slider-swiper-container">
@@ -57,9 +60,9 @@ export function SectionReels() {
             height="560"
             src="https://www.youtube.com/embed/m31WtCuDB3k"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-            allowfullscreen
+            allowFullScreen
           ></SwiperSlide>
           <SwiperSlide
             tag="iframe"
@@ -67,9 +70,9 @@ export function SectionReels() {
             height="560"
             src="https://www.youtube.com/embed/kAZPcNtW6MY"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></SwiperSlide>
           <SwiperSlide
             tag="iframe"
@@ -77,9 +80,9 @@ export function SectionReels() {
             height="560"
             src="https://www.youtube.com/embed/tBlVw1V_0no"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></SwiperSlide>
           <SwiperSlide
             tag="iframe"
@@ -87,9 +90,9 @@ export function SectionReels() {
             height="560"
             src="https://www.youtube.com/embed/R8M7bjZoV5w"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></SwiperSlide>
         </Swiper>
       </div>

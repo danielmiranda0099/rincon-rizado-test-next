@@ -1,4 +1,9 @@
-import { IconClock, IconFacebook, IconMap, IconPhone } from "@/components/icons";
+import {
+  IconClock,
+  IconFacebook,
+  IconMap,
+  IconPhone,
+} from "@/components/icons";
 import "./styles.css";
 
 export default function page() {
@@ -9,7 +14,8 @@ export default function page() {
           <div className="contact-info-items-container">
             <h3>Horario</h3>
             <div className="contact-info-item">
-              <IconClock size="1.7rem" /> <p>Lunes a Sabado de 9:00 a.m a 6:00 p.m </p>
+              <IconClock size="1.7rem" />{" "}
+              <p>Lunes a Sabado de 9:00 a.m a 6:00 p.m </p>
             </div>
             <div className="contact-info-item">
               <IconClock size="1.7rem" /> <p>Festivos de 9:00 a.m a 3:00 p.m</p>
@@ -52,7 +58,7 @@ export default function page() {
           width="100%"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
