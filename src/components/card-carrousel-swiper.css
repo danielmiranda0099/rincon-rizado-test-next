@@ -35,6 +35,9 @@
   text-decoration: none;
   color: inherit;
 }
+.container-card-services a {
+  text-decoration: none;
+}
 .container-card-services img {
   aspect-ratio: 12 / 16 !important;
   width: 100%;

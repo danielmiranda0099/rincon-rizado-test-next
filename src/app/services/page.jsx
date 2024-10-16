@@ -2,12 +2,16 @@
 import { IconWhatsApp } from "@/components/icons";
 import "./styles.css";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const TYPE_SERVICES = {
   color: "color",
   corte: "corte",
   ritual: "ritual",
   definicion: "definicion",
+  tratamiento: "tratamiento",
+  cita: "cita",
 };
 
 const BREAD = {
@@ -16,74 +20,94 @@ const BREAD = {
   corte: "Cortes",
   ritual: "Rituales",
   definicion: "Definiciones",
+  tratamiento: "Tratamiento",
+  cita: "Cita",
 };
 
 const ALL_SERVICES = [
   {
-    image: "./images/image5.jpg",
-    service_name: "color base con aclaracion",
+    image: "/images/image13.jpg",
+    service_name: "Color base",
     type_service: TYPE_SERVICES.color,
-    path: "#",
+    path: "/services/color-base",
   },
   {
-    image: "./images/image6.jpg",
+    image: "/images/image6.jpg",
     service_name: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",
     type_service: TYPE_SERVICES.color,
-    path: "#",
+    path: "/services/iluminaciones-highlight-balayage",
   },
   {
-    image: "./images/image7.jpg",
-    service_name: "Color base sin aclaracion",
-    type_service: TYPE_SERVICES.color,
-    path: "#",
-  },
-  {
-    image: "./images/image8.jpg",
+    image: "/images/image8.jpg",
     service_name: "babylights",
     type_service: TYPE_SERVICES.color,
-    path: "#",
+    path: "/services/babylights",
   },
   {
-    image: "./images/image9.jpg",
+    image: "/images/image9.jpg",
     service_name: "corte de forma",
     type_service: TYPE_SERVICES.corte,
-    path: "#",
+    path: "/services/corte-de-forma",
   },
   {
-    image: "./images/image10.jpg",
+    image: "/images/image10.jpg",
     service_name: "corte de puntas",
     type_service: TYPE_SERVICES.corte,
-    path: "#",
+    path: "services/corte-de-puntas",
   },
   {
-    image: "./images/image11.jpg",
-    service_name: "Ritual Infantil",
+    image: "/images/image11.jpg",
+    service_name: "Corte de forma baby",
+    type_service: TYPE_SERVICES.corte,
+    path: "services/corte-de-forma-baby",
+  },
+  {
+    image: "/images/image12.jpg",
+    service_name: "cita en transición capilar",
+    type_service: TYPE_SERVICES.cita,
+    path: "/services/cita-en-transicion-capilar",
+  },
+  {
+    image: "/images/image7.jpg",
+    service_name: "Ritual hidratante",
     type_service: TYPE_SERVICES.ritual,
-    path: "#",
+    path: "/services/ritual-hidratante",
   },
   {
-    image: "./images/image12.jpg",
-    service_name: "ritual EN TRANSICIÓN CAPILAR",
-    type_service: TYPE_SERVICES.ritual,
-    path: "#",
-  },
-  {
-    image: "./images/image13.jpg",
-    service_name: "RITUAL HIDRATANTE",
-    type_service: TYPE_SERVICES.ritual,
-    path: "#",
-  },
-  {
-    image: "./images/image14.jpg",
+    image: "/images/image14.jpg",
     service_name: "Cita De Definición",
     type_service: TYPE_SERVICES.definicion,
-    path: "#",
+    path: "/services/cita-de-definicion",
   },
   {
-    image: "./images/image15.jpg",
-    service_name: "Cita Definición Infantil",
+    image: "/images/image15.jpg",
+    service_name: "tratamiento profundo",
+    type_service: TYPE_SERVICES.tratamiento,
+    path: "services/tratamiento-profundo",
+  },
+  {
+    image: "/images/image18.jpg",
+    service_name: "cita en transición capilar",
+    type_service: TYPE_SERVICES.tratamiento,
+    path: "services/cita-en-transicion-capilar",
+  },
+  {
+    image: "/images/image20.jpg",
+    service_name: "cita definicion infantil",
     type_service: TYPE_SERVICES.definicion,
-    path: "#",
+    path: "services/cita-definicion-infantil",
+  },
+  {
+    image: "/images/image20.jpg",
+    service_name: "Ritual infantil",
+    type_service: TYPE_SERVICES.ritual,
+    path: "services/ritual-infantil",
+  },
+  {
+    image: "/images/image16.jpg",
+    service_name: "Ritual reparador",
+    type_service: TYPE_SERVICES.ritual,
+    path: "services/ritual-reparador",
   },
 ];
 
@@ -120,13 +144,15 @@ export default function AllServicesPage() {
           {dataServices.map((service) => (
             <div className="service-by-type-item" key={service.service_name}>
               <div className="service-item-image">
-                <img src={service.image} alt="" />
+                <Image height={300} width={300} src={service.image} alt="" />
               </div>
               <div className="service-item-header">
                 <h2>{service.service_name}</h2>
 
                 <div className="service-item-header-buttons">
-                  <a className="btn btn-outline">Ver Mas</a>
+                  <Link className="btn btn-outline" href={service.path}>
+                    Ver Mas
+                  </Link>
                   <a className="btn btn-primary service-item-header-button-whatsapp">
                     Agendar
                     <span>

@@ -11,8 +11,8 @@ import Link from "next/link";
 
 const SERVICES_MAIN = [
   {
-    title: "Color Base con Aclaración",
-    path: "/services/color-base-con-aclaracion",
+    title: "Color Base",
+    path: "/services/color-base",
     image: "/images/image11.jpg",
   },
   {
@@ -24,16 +24,6 @@ const SERVICES_MAIN = [
     title: "ILUMINACIONES: HIGHLIGHT - BALAYAGE",
     path: "/services/iluminaciones-highlight-balayage",
     image: "/images/image13.jpg",
-  },
-  {
-    title: "Prueba de coloración",
-    path: "/services/slug",
-    image: "https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg",
-  },
-  {
-    title: "Color Base Sin Aclaración (cobertura oscura)",
-    path: "/services/color-base-sin-aclaracion",
-    image: "/images/image19.jpg",
   },
   {
     title: "BABYLIGHTS",

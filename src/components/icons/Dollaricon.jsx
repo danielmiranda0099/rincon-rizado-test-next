@@ -1,4 +1,4 @@
-export function IconClock({
+export function DollarIcon({
   size = 24,
   color = "currentColor",
   className = "",
@@ -16,8 +16,8 @@ export function IconClock({
       strokeLinejoin="round"
       className={className}
     >
-      <circle cx="12" cy="12" r="10" />
-      <polyline points="12 6 12 12 16 14" />
+      <line x1="12" y1="1" x2="12" y2="23" />
+      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
     </svg>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-import { IconCheck, IconClock, IconShopping } from "@/components/icons";
+import { DollarIcon, IconCheck, IconClock } from "@/components/icons";
 import "./styles.css";
 
 import { ALL_SERVICE } from "@/placeholders/services";
@@ -11,6 +11,7 @@ import { Navigation, Pagination } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 export default function ServisePage({ params }) {
   let serviceSlug = params.service;
@@ -27,28 +28,48 @@ export default function ServisePage({ params }) {
         <div className="service-banner-content">
           <h1>{data.name_service}</h1>
 
-          
-            {
-              data.short_description.map( (description, index) => <p className="service-banner-content-description" key={index}>{description} </p>)
-            }
-         
-
-          <span>Ver menos</span>
+          <p className="service-banner-content-description">
+            {data.short_description}
+          </p>
+          {data?.description?.length >= 1 && (
+            <details>
+              {data.description.map((description, index) => (
+                <p key={index} className="service-banner-content-description">
+                  {description}
+                </p>
+              ))}
+              <summary className="text-smx2"></summary>
+            </details>
+          )}
 
           <div className="service-banner-price">
-            <IconShopping size={22}/>
-            <p>Tarifa:</p>
-            <span>{data.price}</span>
+            <div className="service-banner-header">
+              <DollarIcon size={"1.6rem"} />
+              <p>Tarifa:</p>
+            </div>
+            <div className="service-banner-price-price">
+              {data.price.split("%$%").map((price) => (
+                <span key={price}>{price}</span>
+              ))}
+            </div>
           </div>
           <div className="service-banner-price">
-            <IconClock size={22}/>
-            <p>Tiempo estimado:</p>
+            <div className="service-banner-header">
+              <IconClock size={"1.6rem"} />
+              <p>Tiempo estimado:</p>
+            </div>
             <span>{data.time}</span>
           </div>
 
-          <span className="service-conditions">
-            *{data.conditions}
-          </span>
+          {data?.other_service.map((service) => (
+            <p className="text-md" key={service}>
+              {service}
+            </p>
+          ))}
+
+          {data.conditions && (
+            <span className="service-conditions">*{data.conditions}</span>
+          )}
 
           <button className="btn btn-primary">Agendar Servicio</button>
         </div>
@@ -65,7 +86,7 @@ export default function ServisePage({ params }) {
         <img src="https://images.pexels.com/photos/2576788/pexels-photo-2576788.jpeg" />
       </div> */}
 
-<div className="section-contained-sm service-content-offers">
+      <div className="section-contained-sm service-content-offers">
         <h2 className="text-lg text-center margin-bottom-mdx">
           El Servicio Incluye:
         </h2>
@@ -92,27 +113,50 @@ export default function ServisePage({ params }) {
             className="section-contained-full service-result-images-container"
           >
             <SwiperSlide tag="div" className="service-result-images">
-              <img src="/images/services/corte-forma/unnamed-7.jpg" />
+              <Image
+                src="/images/services/corte-forma/unnamed-7.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </SwiperSlide>
             <SwiperSlide tag="div" className="service-result-images">
-            <img src="/images/services/corte-forma/unnamed-2.jpg" />
+              <Image
+                src="/images/services/corte-forma/unnamed-2.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </SwiperSlide>
             <SwiperSlide tag="div" className="service-result-images">
-            <img src="/images/services/corte-forma/unnamed-3.jpg" />
+              <Image
+                src="/images/services/corte-forma/unnamed-3.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </SwiperSlide>
             <SwiperSlide tag="div" className="service-result-images">
-            <img src="/images/services/corte-forma/unnamed-4.jpg" />
+              <Image
+                src="/images/services/corte-forma/unnamed-4.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </SwiperSlide>
             <SwiperSlide tag="div" className="service-result-images">
-            <img src="/images/services/corte-forma/unnamed-5.jpg" />
+              <Image
+                src="/images/services/corte-forma/unnamed-5.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </SwiperSlide>
           </Swiper>
         </div>
 
         <div className="divisor-layout-item"></div>
       </div>
-
-
     </section>
   );
 }

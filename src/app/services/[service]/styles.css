@@ -17,8 +17,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--cc-size-1x3);
-  z-index: 100;
+  gap: var(--cc-size-1x2);
 }
 .service-banner-content h1 {
   font-size: var(--cc-text-lgx2);
@@ -36,6 +35,22 @@
   text-overflow: ellipsis;*/
   
 }
+.service-banner-content details {
+  cursor: pointer;
+  margin-top: calc(-1 * var(--cc-size-1x));
+}
+
+.service-banner-content details[open] summary::after {
+  content: "Ver menos";
+}
+.service-banner-content details summary {
+  list-style: none;
+}
+.service-banner-content details summary::after {
+  content: "Ver más";
+  text-decoration: underline;
+}
+
 .service-banner-content > span {
   font-size: var(--cc-text-smx2);
   text-decoration: underline;
@@ -43,15 +58,27 @@
 }
 .service-banner-price {
   display: flex;
-  gap: var(--cc-size-1x3);
+  gap: var(--cc-size-1);
+}
+.service-banner-header {
+  display: flex;
+  gap: 0.2rem;
+}
+.service-banner-header *{
+  font-weight: bold;
 }
 .service-banner-price * {
   font-size: var(--cc-text-md);
 }
 
+.service-banner-price .service-banner-price-price {
+  display: flex;
+  flex-direction: column;
+}
+
 .service-conditions {
   width: 60%;
-  font-size: var(--cc-text-sm);
+  font-size: var(--cc-text-s);
   text-decoration: none !important;
 }
 
