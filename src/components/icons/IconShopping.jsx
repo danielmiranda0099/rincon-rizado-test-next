@@ -1,6 +1,6 @@
 export function IconShopping({
   size = "1rem",
-  color = "#2c3e50",
+  color = "currentColor",
   className = "",
 }) {
   return (

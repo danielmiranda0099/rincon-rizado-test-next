@@ -1,90 +1,90 @@
 .header-menu-main {
   width: 100%;
-  height: var(--cc-size-5) !important;
+  height: var(--cc-size-6);
   padding: 0 var(--cc-size-2);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  position: relative;
   z-index: 1000;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 .nav-menu-main {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .nav-menu-logo {
   text-decoration: none;
   font-size: var(--cc-text-lg);
-  color: rgb(234, 179, 179);
   font-weight: bold;
+  color: var(--cc-color-purple-dark-primary);
 }
-.menu-main-icon {
-  display: flex;
+.menu-main-icon-control-hamburguer {
+  display: none;
   justify-content: center;
   align-items: center;
 
   position: relative;
+
+  width: var(--cc-size-3);
+  height: var(--cc-size-3);
+
+
 }
-.menu-main-icon > input {
+
+.menu-main-icon-control-hamburguer .menu-main-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-}
-.menu-main-icon > .menu-main-icon-open,
-.menu-main-icon > .menu-main-icon-close {
-  display: none;
 }
 .nav-menu-items {
   display: flex;
-  gap: 16px;
+  gap: 1.5rem;
 }
-
-.nav-menu-item {
+.nav-menu-items .nav-menu-item{
   text-decoration: none;
-  color: rgb(234, 179, 179);
+  font-size: var(--cc-text-smx2);
+  color: var(--cc-color-purple-dark-primary);
   font-weight: bold;
 }
 
+
 @media screen and (width <= 790px) {
   .header-menu-main {
-    overflow: visible;
+    
+    padding: 0;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.35); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    position: fixed;
+    top: 0;
   }
-  .menu-main-icon > input:checked ~ .menu-main-icon-open {
-    display: none;
+  .header-menu-main.active {
+    height: 100vh;
   }
-  .menu-main-icon > input:not(:checked) ~ .menu-main-icon-close {
-    display: none;
+  .nav-menu-main {
+    height: 100vh;
+    align-items: start;
   }
-  .menu-main-icon:has(:checked) ~ .nav-menu-items {
+  .menu-main-icon-control-hamburguer {
     display: flex;
   }
-  .menu-main-icon:not(:has(:checked)) ~ .nav-menu-items {
-    display: none;
-  }
   .nav-menu-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: fixed;
-    top: var(--cc-size-5);
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(57, 74, 157);
   }
-  .nav-menu-items::before {
-    display: block;
-    content: "MENU";
-  }
-  .menu-main-icon > .menu-main-icon-open,
-  .menu-main-icon > .menu-main-icon-close {
-    display: block;
+  .nav-menu-items .nav-menu-item{
+    font-size: var(--cc-text-lgx);
   }
 }

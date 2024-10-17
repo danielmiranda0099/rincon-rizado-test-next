@@ -1,7 +1,9 @@
 export function IconClose({
   size = "1rem",
-  color = "#2c3e50",
+  color = "currentColor",
   className = "",
+  style = {},
+  onClick = () => {},
 }) {
   return (
     <svg
@@ -14,6 +16,8 @@ export function IconClose({
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
+      style={{ ...style }}
+      onClick={() => onClick()}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 6l-12 12" />
