@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: var(--cc-size-7);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .image-diff-header {
@@ -25,7 +27,7 @@
 
 
 .swiper-image-diff{
-  width: 400px;
+  width: 25rem;
   padding-top: 50px;
   padding-bottom: 70px;
   /* background-color: red; */
@@ -36,7 +38,7 @@
 .swiper-item {
   background-position: center;
   background-size: cover;
-  width: 400px;
+  width: 25rem;
   height: fit-content;
   /* background-color: yellow; */
 }
