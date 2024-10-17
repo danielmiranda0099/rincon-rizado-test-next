@@ -1,7 +1,7 @@
 .header-menu-main {
   width: 100%;
   height: var(--cc-size-6);
-  padding: 0 var(--cc-size-2);
+  padding: var(--cc-size-2);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -58,8 +58,7 @@
 
 @media screen and (width <= 790px) {
   .header-menu-main {
-    
-    padding: 0;
+    padding: var(--cc-size-1x);
     align-items: start;
     background: rgba(255, 255, 255, 0.35); /* Fondo semitransparente */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
