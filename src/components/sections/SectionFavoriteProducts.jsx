@@ -10,7 +10,7 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 
 import "./section-favorite-products.css";
-import { ProductCard } from "..";
+import { ProductCard } from "@/components/ProductCard";
 
 export function SectionFavoriteProducts() {
   return (
