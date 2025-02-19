@@ -1,29 +1,25 @@
-'use client'
-import { useRef, useState } from 'react'
-import './image-diff.css'
 
+"use client"
+import "two-up-element"
+import "./image-diff.css";
 
-export function ImageDiff({images}) {
-  const [value, setValue] = useState(50)
+export function ImageDiff({ images }) {
 
   return (
     <section className="app-slider-carousel-container">
-    <div className="carousel-container">
-      <div className="slider-container">
-        <div className="c-compare item" style={{"--value": `${value}%`}}>
-          <img className="c-compare__left" src={images[0]} alt="Color" />
-          <img className="c-compare__right" src={images[1]} alt="B/W" />
-          <input
-            type="range"
-            className="c-rng c-compare__range"
-            min="0"
-            max="100"
-            onChange={ (event) => setValue(event.target.value)}
-          />
+      <div className="carousel-container">
+        <div className="slider-container">
+          <two-up>
+            <div className="item">
+              <img className="c-compare__left" src={images[0]} alt="Color" />
+            </div>
+            <div className="item">
+              <img className="c-compare__right" src={images[1]} alt="B/W" />
+            </div>
+          </two-up>
         </div>
-    </div>
-    </div>
-    {/* <div className="arrow arrow-left">
+      </div>
+      {/* <div className="arrow arrow-left">
       <svg
         width="100%"
         viewBox="0 0 24 24"
@@ -46,6 +42,6 @@ export function ImageDiff({images}) {
         ></path>
       </svg>
     </div> */}
-  </section>
-  )
+    </section>
+  );
 }

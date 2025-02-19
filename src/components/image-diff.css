@@ -1,15 +1,15 @@
 .app-slider-carousel-container {
   position: relative;
   padding: 0px 60px;
-  width: fit-content;
+  
   /* background-color: blue; */
 }
 
 .carousel-container {
   /* position: relative; */
   height: 40vh;
-  width: fit-content;
-  overflow: hidden;
+  
+  
 }
 
 .slider-container {
@@ -32,142 +32,4 @@
   height: 100%;
   width: auto;
   border-radius: 16px;
-}
-
-.arrow {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  border-radius: 100%;
-
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.arrow-left {
-  left: 0;
-  top: calc( 50% - 25px);
-}
-
-.arrow-right {
-  right: 0;
-  top: calc( 50% - 25px);
-  z-index: 1000;
-}
-
-
-
-
-/*********************************/
-
-
-.c-compare {
-  --h: 5;
-  --m: 1rem 0;
-  --w: 16;
-  --thumb-bgc: rgb(240, 148, 148);
-  --thumb-bgc-focus: hsla(0, 70%, 70%, 0.7);
-  --thumb-w: 1rem;
-
-  position: relative;
-  max-width: 500px;
-  height: auto;
-  aspect-ratio: 4 / 5;
-}
-.c-compare::after {
-  content: "";
-  display: block;
-  padding-bottom: calc((var(--h) / var(--w)) * 100%);
-}
-.c-compare__left,
-.c-compare__right {
-  height: 100%;
-  
-  position: absolute;
-  width: 100%;
-}
-.c-compare__left {
-  clip-path: polygon(0% 0%, var(--value) 0%, var(--value) 100%, 0% 100%);
-}
-.c-compare__right {
-  clip-path: polygon(100% 0%, var(--value) 0%, var(--value) 100%, 100% 100%);
-}
-
-/* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuNSA1QTEuNSAxLjUgMCAwIDAgMTkgNi41VjExaC0xVjQuNWExLjUgMS41IDAgMCAwLTMgMFYxMWgtMVYzLjVhMS41IDEuNSAwIDAgMC0zIDBWMTFoLTFWNS41YTEuNSAxLjUgMCAwIDAtMyAwdjEwLjgxbC0yLjIyLTMuNmExLjUgMS41IDAgMCAwLTIuNTYgMS41OGwzLjMxIDUuMzRBNSA1IDAgMCAwIDkuNzggMjJIMTdhNSA1IDAgMCAwIDUtNVY2LjVBMS41IDEuNSAwIDAgMCAyMC41IDV6Ii8+PC9zdmc+"); */
-
-.c-compare__range {
-  z-index: 1000;
-  position: relative;
-  -webkit-appearance: none;
-  background-color: red;
-  appearance: none;
-  width: 100%;
-  height: 100%;
-  background: transparent; /* Color de fondo */
-  border-radius: 5px; /* Borde redondeado */
-}
-
-/* Agrega el icono SVG como fondo en todos los navegadores */
-.c-compare__range::before {
-  content: "";
-  background-image: url("/images/before-after-effect-arrows.png");
-  background-repeat: no-repeat;
-  background-size: 60px;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: calc(50% - 30px);
-  left: calc(var(--value) - 30px);
-}
-
-.c-compare__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 4px; /* Ancho del pulgar */
-  height: 100%; /* Alto del pulgar */
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.c-compare__range:focus::-webkit-slider-thumb {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.c-compare__range::-webkit-slider-runnable-track {
-  background: transparent;
-  background-size: 100%;
-  box-sizing: border-box;
-  height: 100%;
-}
-.c-compare__range,
-.c-compare__range::-webkit-slider-runnable-track,
-.c-compare__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-/* Estilos específicos de Firefox */
-.c-compare__range::-moz-range-thumb {
-  /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuNSA1QTEuNSAxLjUgMCAwIDAgMTkgNi41VjExaC0xVjQuNWExLjUgMS41IDAgMCAwLTMgMFYxMWgtMVYzLjVhMS41IDEuNSAwIDAgMC0zIDBWMTFoLTFWNS41YTEuNSAxLjUgMCAwIDAtMyAwdjEwLjgxbC0yLjIyLTMuNmExLjUgMS41IDAgMCAwLTIuNTYgMS41OGwzLjMxIDUuMzRBNSA1IDAgMCAwIDkuNzggMjJIMTdhNSA1IDAgMCAwIDUtNVY2LjVBMS41IDEuNSAwIDAgMCAyMC41IDV6Ii8+PC9zdmc+"); */
-  background-size: 40px; /* Ajusta el tamaño según tus necesidades */
-  appearance: none;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 50%;
-  filter: invert(1);
-  background-color: transparent;
-  border: none;
-}
-
-.c-compare__range:focus::-moz-range-thumb {
-  background-color: transparent;
-}
-
-.c-compare__range::-moz-range-track {
-  background: transparent;
-  height: 100%;
 }
