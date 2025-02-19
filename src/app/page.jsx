@@ -9,6 +9,7 @@ import {
 import { SectionCategoriesGrid } from "@/components/sections/SectionCategoriesGrid";
 import Link from "next/link";
 
+
 const SERVICES_MAIN = [
   {
     title: "Color Base",
@@ -63,7 +64,7 @@ export default function Home() {
 
       <SectionTest />
 
-      <SectionImageDiff />
+      <SectionImageDiff /> 
 
       <SectionTraining />
 
