@@ -13,7 +13,7 @@
 }
 .services-filter-container select::before {
   display: block;
-  content: 'hola';
+  content: "hola";
 }
 
 .all-services-container h1 {
@@ -27,8 +27,8 @@
   grid-template-columns: repeat(auto-fill, minmax(var(--cc-size-20), 1fr));
   gap: var(--cc-size-1x2);
 }
- .service-by-type-item {
-  
+.service-by-type-item {
+  text-decoration: none !important;
 }
 /*
 .service-by-type-item .service-item-image {
@@ -68,7 +68,9 @@
   cursor: pointer;
 }
 
-.service-by-type-item .service-item-header-buttons .service-item-header-button-whatsapp {
+.service-by-type-item
+  .service-item-header-buttons
+  .service-item-header-button-whatsapp {
   display: flex;
   justify-content: center;
   align-items: center;
