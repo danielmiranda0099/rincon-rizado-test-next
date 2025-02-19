@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
-import { ImageDiff } from "..";
+import { ImageDiff } from "@/components";
 
 import "./section-image-diff.css";
 
@@ -28,7 +28,7 @@ export function SectionImageDiff() {
           
           pagination={true}
           modules={[Pagination, Navigation]}
-          touch={false} // Desactiva el touch en móvil
+          
           simulateTouch={false} // Desactiva el arrastre con mouse
           allowTouchMove={false} // Bloquea el movimiento con touch
           className="swiper-image-diff"
