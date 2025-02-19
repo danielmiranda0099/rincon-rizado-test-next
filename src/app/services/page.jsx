@@ -142,14 +142,14 @@ export default function AllServicesPage() {
         <h1>{BREAD[filterValue]}</h1>
         <div className="services-by-type-container">
           {dataServices.map((service) => (
-            <div className="service-by-type-item" key={service.service_name}>
+            <Link href={service.path} is="div" className="service-by-type-item" key={service.service_name}>
               <div className="service-item-image">
                 <Image height={300} width={300} src={service.image} alt="" />
               </div>
               <div className="service-item-header">
                 <h2>{service.service_name}</h2>
 
-                <div className="service-item-header-buttons">
+                {/* <div className="service-item-header-buttons">
                   <Link className="btn btn-outline" href={service.path}>
                     Ver Mas
                   </Link>
@@ -159,9 +159,9 @@ export default function AllServicesPage() {
                       <IconWhatsApp size="1.7rem" color="white" />
                     </span>
                   </a>
-                </div>
+                </div> */}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
